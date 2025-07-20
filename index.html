@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Adda</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <script defer src="script.js"></script>
+    <script src="script2.js"></script>
+    
+</head>
+<body id="home">
+ <nav class="navbar">
+        <div id="menu-icon">☰</div>
+         <div id="logo"><img src="movie adda 3.png" alt="Movie Adda Logo"></div>
+          <h1>Movie Adda</h1>
+           <ul id="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#trending-movies">Trending</a></li>
+            <li><a href="#demand">Demand</a></li>
+           <!-- <li><a href="">Register</a></li>-->
+        </ul>
+          <div class="search-container">
+            <input type="text" id="searchBox" placeholder="Search here..." onkeyup="showResults()">
+            <div class="popup" id="popupResults"></div>
+        </div>
+ </nav>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ 
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: #000;
+    }
+
+    .slider {
+      overflow: hidden;
+      width: 100%;
+      background: #000;
+      padding: 10px 0;
+    }
+
+    .slide-track {
+      display: flex;
+      width: calc(250px * 20); /* 10 images * 2 (for duplication) */
+      animation: scroll 30s linear infinite;
+    }
+
+    .slide {
+      width: 250px;
+      flex-shrink: 0;
+      margin: 0 10px;
+    }
+
+    .slide img {
+      width: 100%;
+      height: 300px;
+      border-radius: 10px;
+      border: 2px solid white;
+      transition: transform 0.3s;
+    }
+
+    .slide img:hover {
+      transform: scale(1.05);
+    }
+
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      .slide {
+        width: auto;
+      }
+      .slide img:hover {
+      transform: scale(1.05);
+    }
+
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
+    .slide-track {
+      display: flex;
+      width: calc(250px * 20); /* 10 images * 2 (for duplication) */
+      animation: scroll 30s linear infinite;
+    }
+    }
+  </style>
+</head>
+<body>
+
+<div class="slider">
+  <div class="slide-track">
+    <!-- 10 Slides (Doubled below for infinite effect) -->
+    <div class="slide">
+      <a href="https://drive.google.com/file/d/1jt6SpHDiJwTvzjP7YxOGQopvnIlbT5ai/view">
+        <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/the-bhootnii-et00435722-1745214773.jpg" alt="The Bhootni"/>
+      </a>
+    </div>
+    <div class="slide">
+      <a href="https://drive.google.com/file/d/12nE3KXdECxcP-bUpm4sMnzItaU_8VHma/view">
+        <img src="https://static.toiimg.com/photo/120782808.cms?imgsize=116097" alt="Raid 2"/>
+      </a>
+    </div>
+    <div class="slide">
+      <a href="https://drive.google.com/file/d/1TPacwENGqO9Kcs4QUyrUFDal5sooLLnC/view">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/95/Kesari_Chapter_2.jpg/250px-Kesari_Chapter_2.jpg" alt="Kesari_Chapter_2"/>
+      </a>
+    </div>
+    <div class="slide">
+      <a href="https://drive.google.com/file/d/1dg3Dq7z3H62qeG5-j_M9w6BlII55beuY/view">
+        <img src="https://stat4.bollywoodhungama.in/wp-content/uploads/2025/02/Jaat-007-322x488.jpg" alt="Jaat"/>
+      </a>
+    </div>
+    <div class="slide">
+      <a href="https://drive.google.com/file/d/1Ja69fUaKP5GSTS_qHwrNx7bqbFJJJ_LM/view">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo1XPccu77APARGi2Dak8eV4dRbGMxdkS-NA&s" alt="Mere Husband Ki Biwi"/>
+      </a>
+    </div>
+    <div class="slide">
+      <a href="https://drive.google.com/file/d/1Tmk9wfZ2Oimurz7qvLQW_ym0gbzxFK1y/view">
+        <img src="https://upload.wikimedia.org/wikipedia/en/c/cf/Mrs._film_poster.jpg" alt="Mrs"/>
+      </a>
+    </div>
+    <div class="slide">
+      <a href="https://drive.google.com/file/d/1UkiC4i5Nv65UFAouL6HuSu-r1rHE5Ebf/view">
+        <img src="https://resizing.flixster.com/R7JQIE8plnOCe-0w0yw_PlrvhKM=/ems.cHJkLWVtcy1hc3NldHMvbW92aWVzL2Y4OTYzNjg1LTkzYzEtNDUzMS04NjQyLTVjN2E3OGMxZmQ1Yi5qcGc=" alt="Deva"/>
+      </a>
+    </div>
+    <div class="slide">
+      <a href="https://drive.google.com/file/d/1bH1zadWkMbVIRM7K3_qQKOfNdic8Euqz/view">
+        <img src="https://upload.wikimedia.org/wikipedia/en/c/c8/The_Mehta_Boys.jpg" alt="The Mehta Boys"/>
+      </a>
+    </div>
+    <div class="slide">
+      <a href="https://drive.google.com/file/d/1JRLZECv-B9zy49Qnv1bmtARBcx2OX2lu/view">
+        <img src="https://m.media-amazon.com/images/M/MV5BNDdkNDlhMmEtZGFiNi00YWY1LWFjODctZDM1NzA1YTY0YWQ5XkEyXkFqcGc@._V1_.jpg" alt="The Diplomat"/>
+      </a>
+    </div>
+    <div class="slide">
+      <a href="https://drive.google.com/file/d/1bxEErkkx86mIJWbXWUya2QSBj2HXSsgL/view">
+        <img src="https://upload.wikimedia.org/wikipedia/en/3/34/Be_Happy_film_poster.jpg" alt="Be Happy"/>
+      </a>
+    </div>
+
+    <div class="slide">
+      <a href="https://drive.google.com/file/d/1jt6SpHDiJwTvzjP7YxOGQopvnIlbT5ai/view">
+        <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/the-bhootnii-et00435722-1745214773.jpg" alt="The Bhootni"/>
+      </a>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
+
+  <br>
+    <marquee behavior="scroll" direction="left" scrollamount="25" style="font-size: x-large; font-weight: bolder; font-style: italic;">
+            Watch Latest Movies & Web Series... Only on MOVIE ADDA
+        </marquee>
+  </section>
+
+    <header class="banner">
+        <h1 style="font-size: x-large;">Watch Movies or Web Series...</h1>
+        <div class="banner-buttons">
+            <a href="index2.html">
+                <button class="btn">Movies</button>
+            </a>
+            <a href="index (3).html">
+                <button class="btn">Web Series</button>
+            </a> 
+        </div>
+    </header>
+
+    <section id="trending-movies">
+        <h2 style="font-family: serif; font-size: larger; font-style: italic; font-weight: bolder;">Trending Movies</h2>
+        <marquee behavior="scroll" direction="right" scrollamount="6" >
+            <ul class="scroll-container">
+            <li><a href="https://drive.google.com/file/d/1jt6SpHDiJwTvzjP7YxOGQopvnIlbT5ai/view">
+        <img src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/the-bhootnii-et00435722-1745214773.jpg" height="180" width="150" alt="The Bhootni"/>
+      </a></li>
+            <li><a href="https://drive.google.com/file/d/12nE3KXdECxcP-bUpm4sMnzItaU_8VHma/view">
+        <img src="https://static.toiimg.com/photo/120782808.cms?imgsize=116097" height="180" width="150" alt="Raid 2"/>
+      </a></li>
+            <li><a href="https://drive.google.com/file/d/1TPacwENGqO9Kcs4QUyrUFDal5sooLLnC/view">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/9/95/Kesari_Chapter_2.jpg/250px-Kesari_Chapter_2.jpg" height="180"
+        width="150" alt="Kesari_Chapter_2"/>
+      </a></li>
+            <li><a href="https://drive.google.com/file/d/1dg3Dq7z3H62qeG5-j_M9w6BlII55beuY/view">
+        <img src="https://stat4.bollywoodhungama.in/wp-content/uploads/2025/02/Jaat-007-322x488.jpg"  height="180" width="150" alt="Jaat"/>
+      </a></li>
+            <li><a href="https://drive.google.com/file/d/1Ja69fUaKP5GSTS_qHwrNx7bqbFJJJ_LM/view">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQo1XPccu77APARGi2Dak8eV4dRbGMxdkS-NA&s" height="180" width="150" alt="Mere Husband Ki Biwi"/>
+      </a></li>
+      <li> <a href="https://drive.google.com/file/d/1Tmk9wfZ2Oimurz7qvLQW_ym0gbzxFK1y/view">
+        <img src="https://upload.wikimedia.org/wikipedia/en/c/cf/Mrs._film_poster.jpg"  height="180" width="150" alt="Mrs"/>
+      </a></li>
+        </ul>
+        </marquee>
+    </section>
+
+    <section class="demand-area" id="demand">
+        <h2 style="color: #fcf6f6;">Demand Your Favorite Movie or Series</h2>
+        <form id="movie-form">
+            <input id="series" type="text" name="movieName" placeholder="Enter Movie Name or Web Series..." required />
+            <button id="btn" type="submit">Submit</button>
+          </form>
+          
+          <script>
+            const form = document.getElementById('movie-form');
+            form.addEventListener('submit', function(e) {
+              e.preventDefault();
+              
+              const formData = new FormData(form);
+              const params = new URLSearchParams();
+              for (const [key, value] of formData.entries()) {
+                params.append(key, value);
+              }
+          
+              fetch('https://script.google.com/macros/s/AKfycbzhW6hJW2Q4exXtOjMYVTVdwcrx-OH8SGsN1bsQv7cnT_sR7A2C7sNh0LrugEHL05Hv/exec', {
+                method: 'POST',
+                body: params,
+              })
+              .then(response => response.text())
+              .then(data => {
+                alert('Movie requested successfully!');
+                form.reset();
+              })
+              .catch(error => {
+                alert('Error submitting request.');
+                console.error(error);
+              });
+            });
+          </script>
+          
+     
+    </section>
+ 
+    <footer class="footer">
+        <p>&copy; 2025 Movie Adda. All rights reserved.</p>
+        <a href="https://www.instagram.com/webgrow2025?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">
+            <i class="fa-brands fa-instagram" style="color: white; font-size: large;"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/webgrow-a-innovation-web-solution-a746b9272/">
+            <i class="fa-brands fa-linkedin" style="color: white; font-size: large;"></i>
+        </a>
+    </footer>
+
+    <script>
+        
+        document.getElementById("menu-icon").addEventListener("click", function() {
+            document.getElementById("nav-links").classList.toggle("active");
+        });
+    </script>
+
+</body>
+</html>
