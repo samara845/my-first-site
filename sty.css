@@ -113,13 +113,13 @@ h1 {
 
 .first{
     background-color: black;
-    height: 1900px;
+    height: 1950px;
     width: 1400px;
 }
 
 .second{
     background-color: black;
-    height: 1700px;
+    height: 1300px;
     width: 1400px;
 }
 #ruslaan{
@@ -132,13 +132,13 @@ h1 {
 }
 .third{
     background-color: black;
-    height: 960px;
+    height: 900px;
     width: 1400px;
 }
 
 .fourth{
     background-color: black;
-    height: 960px;
+    height: 750px;
     width: 1400px;
 }
 .fifth{
@@ -404,13 +404,13 @@ li {
     .first{
     background-color: black;
     height: 4000px;
-    width: 560px;
+    width: 480px;
 }
 
 .second{
     background-color: black;
     height: 4000px;
-    width: 560px;
+    width: 480px;
 }
 #ruslaan{
     margin-top: 50px;
@@ -423,18 +423,18 @@ li {
 .third{
     background-color: black;
     height: 2200px;
-    width: 560px;
+    width: 480px;
 }
 
 .fourth{
     background-color: black;
     height: 2000px;
-    width: 560px;
+    width: 480px;
 }
 .fifth{
     background-color: black;
-    height: 4000px;
-    width: 100px;
+    height: 40px;
+    width: 10px;
 }
 
 
@@ -482,7 +482,7 @@ img {
     justify-content: space-between;
     align-items: center;
     height: 70px;
-    width: 80%;
+    width: 90%;
     margin-left: 10px;
     margin-bottom: 10px;
     background-color: black;

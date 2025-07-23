@@ -289,11 +289,76 @@ li {
 .scroll-container img {
     display: block;
     border-radius: 20px;
-    height: 90px;
+    height: 160px;
     width: 90px;
 
 }
 marquee{
+  width: 470px;
+}
+
+.navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 70px;
+      padding: 0 20px;
+      background-color: black;
+      border-bottom: 1px solid white;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+    }
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: aqua;
+    color: rgb(7, 7, 7);
+    margin-top: 20px;
+    width: 500px;
+}
+
+.slider {
+      width: 610px;
+      overflow: hidden;
+      position: relative;
+    }
+    .slide-track{
+      width: 500px;
+      margin-left: 10px;
+    }
+   
+    .demand-area {
+    text-align: center;
+    padding: 20px;
+    background-color: transparent;
+    margin-top: 20px;
+}
+
+.demand-area , h2{
+  margin-left: 20px;
+}
+#btn{
+    background-color: rgb(6, 248, 236);
+    color: rgb(14, 13, 13);
+    height: 30px;
+    width: 70px;
+    border-radius: 50px;
+    border: none;
+}
+
+#movie-form{
   width: 450px;
+}
+
+#series{
+    width: 50%;
+    height: 40px;
+    border-radius: 50px;
+    border: 2px rgb(194, 190, 190) solid;
+    background-color: rgb(23, 23, 24);
+    color: rgb(252, 248, 248);
+    font-size: large;
 }
 }
