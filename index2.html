@@ -5,38 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movie Adda</title>
     <link rel="stylesheet" href="sty.css">
+    <script defer src="script.js"></script>
+    <script src="script2.js"></script>
 </head>
 <body>
-
-         <nav class="navbar">
-        <div class="menu-icon" id="menu-icon">☰</div>
-        <div class="logo"><img src="movie adda 3.png" alt="Movie Adda Logo"></div>
-        <h1>Movie Adda</h1>
-        <ul class="nav-links" id="nav-links">
+     <nav class="navbar">
+        <div id="menu-icon">☰</div>
+         <div id="logo"><img src="movie adda 3.png" alt="Movie Adda Logo"></div>
+          <h1>Movie Adda</h1>
+           <ul id="nav-links">
             <li><a href="#home">Home</a></li>
-            <li><a href="#trending">Trending</a></li>
+            <li><a href="#trending-movies">Trending</a></li>
             <li><a href="#demand">Demand</a></li>
-            <li><a href="#register">Register</a></li>
+           <!-- <li><a href="">Register</a></li>-->
         </ul>
-        <div class="search-container">
+          <div class="search-container">
             <input type="text" id="searchBox" placeholder="Search here..." onkeyup="showResults()">
             <div class="popup" id="popupResults"></div>
         </div>
-    </nav>
-    <br>
-    <br>
+ </nav>
+<br>
+<br>
+<br>
+<br>
+<br>
     <h2>All Movies... </h2>
     <br>
     <br>
-    <h1>2025 New Movies...</h1>
+    <div class="first">
+        <h1>2025 New Movies...</h1>
 
     <br>
 
     <ul>
 
-        <li><a href="https://drive.google.com/file/d/1a9y8CUm-eZH10rJ8WSB2WGDKyOM8W5Su/view?usp=sharing">
-            <img id="img"src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQxy947DvbuMcw-9PQiqYPbrFrBJj7vhm__DCmLYNLqVL0ohH2SNliOJeR_x7OzoQAvQ-RDRg" alt="BHOOL CHUK MAAF" height="140" width="100">
+        <li><a href="https://drive.google.com/file/d/11o8RNEAFIFXoMUegQuhhlXJLY_XReJ4f/view?usp=sharing">
+            <img id="img"src="https://m.media-amazon.com/images/M/MV5BNTEyYjI2NjEtMjU1Ni00Yzc1LWFmZTQtNmQzM2FhYzE2MjNlXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Saiyaara" height="140" width="100">
         </a></li>
+
+        <!--<li><a href="https://drive.google.com/file/d/1a9y8CUm-eZH10rJ8WSB2WGDKyOM8W5Su/view?usp=sharing">
+            <img id="img"src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQxy947DvbuMcw-9PQiqYPbrFrBJj7vhm__DCmLYNLqVL0ohH2SNliOJeR_x7OzoQAvQ-RDRg" alt="BHOOL CHUK MAAF" height="140" width="100">
+        </a></li>-->
 
         <li><a href="https://drive.google.com/file/d/1986zpHS9cujmKAGlfjP48aIRF5LKT7s_/view?usp=sharing">
             <img id="img"src="https://www.cinejosh.com/reviewsimg/big/rana-naidu-2-web-series-review_b_1406251137.jpg" alt="Rana Niudu S02" height="140" width="100">
@@ -54,13 +63,7 @@
             <img id="img"src="https://upload.wikimedia.org/wikipedia/en/b/bd/Kaalidhar_Laapata.jpg" alt="Kalidhar Lapta" height="140" width="100">
         </a></li>
 
-        <li><a href="https://drive.google.com/file/d/1GzAQN4QUsr6JPjxrWZXHtzK8SHVO5Ksx/view?usp=sharing">
-            <img id="img"src="https://upload.wikimedia.org/wikipedia/en/b/b4/Taare_Zameen_Par_Like_Stars_on_Earth_poster.png" alt="Tare Zameen Par" height="140" width="100">
-        </a></li>
-
-        <li><a href="https://drive.google.com/file/d/1eLuvBsoUvBM2ASk1uMxooIEZe7Cvj7wV/view?usp=sharing">
-            <img id="img"src="https://upload.wikimedia.org/wikipedia/en/thumb/d/df/3_idiots_poster.jpg/250px-3_idiots_poster.jpg" alt="3 Idiots" height="140" width="100">
-        </a></li>
+        
 
         <li><a href="https://drive.google.com/file/d/1WdUVyclLOOj9IIcMkTGCAqVnKjZRduw6/view?usp=sharing">
             <img id="img"src="https://upload.wikimedia.org/wikipedia/en/thumb/4/40/Maa_%282025_film%29.jpg/250px-Maa_%282025_film%29.jpg" alt="Maa" height="140" width="100">
@@ -70,9 +73,7 @@
             <img id="img"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStuCqCoyIbHV0VaFjqmKrIVLNf1kCBQyvYD_FsGfOt4gn4hOhDPMCUYcfVXK4KcewLHSr5HA" alt="Daku Mahraj" height="140" width="100">
         </a></li>
 
-        <li><a href="https://drive.google.com/file/d/1Xd-bhTD7FaNSwZHN6_yuH29AsRiYN04y/view?usp=sharing">
-            <img id="img"src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p12573103_p_v8_aa.jpg" alt="Sanam teri Kasam" height="140" width="100">
-        </a></li>
+        
 
         <li><a href="https://drive.google.com/file/d/1iOEl9yjfWpGRqc0HVkTdpHRjLP2z-ICD/view?usp=sharing">
             <img id="img"src="https://m.media-amazon.com/images/M/MV5BZmIzMThjNTYtNjkwZi00NmM3LTliNGItZWIxYTUwMGU1YzM0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="HouseFull 5" height="140" width="100">
@@ -195,8 +196,10 @@
             <img  id="img"src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUTExMSFhUVGBcYFRcVFxcVFxUVFxgXFxUVGBcdHSggGB0lGxUXITEhJSorLi4uFx8zODMtNygtLisBCgoKDg0OGhAQGy0eIB8tLS0tLS0rLS0tLS0tLS0tLS8vLS0tLS0tLS0tKy0tLS0tLS0rKy0tLSstLS8tLS0tLf/AABEIAPsAyQMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAADAgQFBgcBAAj/xABBEAABAwIEBAQDBQYEBQUAAAABAgMRACEEBRIxBhNBUSJhcYEUkaEHMlKx8CNCYnLB0TOSouEVFiRD8VNUY7LS/8QAGgEAAwEBAQEAAAAAAAAAAAAAAAECAwQFBv/EACsRAAICAQIEBQQDAQAAAAAAAAABAhEDEiEEMUFRExQiYXEykaHwI4HRBf/aAAwDAQACEQMRAD8AhV4WTvTljD27xvanzuHtS0YLV0+f68qnJOalUVZWHFjlFym6r8/C9uowVhzO8dYjp3pGLwBMb/L1/sflVrw+IcFpBgWt3ifyFLcxKwCkQARBj0jf0rY5HRU/grb9aIjL/CfarA1haWcNFMVFaRgYm/TtTprCHv8ASpsYOlt4WkCIf4SlMZdrVEpTYmVEAWv+hUwrDU5w6wj/ALTarAHUCqSFatXr09KCiJVkMEjnMGEqVIVIOmPCLbmbDyNDxHDOoEB/Di5Elf4Vae2xO3rU6xiIn9iybk3T3M/Lp6UnEY5MyWcOPVIjr3pbj2Km3wsQkHn4czFgvaQTJtt4fqKOzwusf97D+zg6mJqwHFJUAOThwAUzpRvp6TPXrXUKR/6DPtq//VOyaRXnMqUgplbagqfuGY237b0jEYOQKs4Ukf8AZaPsofkf1FA+FpDZWfgJi5Nx0p8MHUsnC0T4emSiBxOCt70BGCuPXtVnVhaEcJTArmKy+TNNPhYnfeNpJJsAB1JNoq1Lw9BVhPMi8gixBGxB6UndbDhp1LVy612IbL8hW8TpISUlKTr8BlatKRB86lUcHvFNtBnTHi31mAf609y9xbUkHUTplTkrV4VBQEk7SB8qeIzp5MAaLBP7p/cMjrSWqty5+Hqei66FUx/DLrSAtekJISRcEnXMW7+E/LyNRnwp/Qq5ZhjXHEaFBEQhMhMGEElN57k/Oor4Q0yHXQdqZFqd4RsEWilOteD2P5UrLE+DbqaZnq3FNIGoiRP/AIpb2Gmm4s+B3/t/tU1o8qdApWMmMPFELF6Xh1lRV5bfWjJPij+H+tKh2NyxXm2N6dPMSLz7UXCsCOvvSGnuMVMVB8R54jCoJ061CLSBcmBTnjTNwwnQknmETAsQkmJrKM9zNZcIOpRRvN9Ku8RvQaRjfMmH+LnVGFKKZuQmwHaRMx711/FIeSlbhVYgGSVQTYfzJJ671SXcVPmZ3onx0IKR1Ee36FOjSuxe8NgxoUoKm822AFiI6j9dadNNKSfDKT3T85if71R8DnKkp0z5etoVPtajDP1wk6pIsT1IGxnvEe80tIUaJg87Wiy/2gG8Dxp8wP3qtuH0uIC0EFKhII61hz2dneb9YtP8Q8z2q48A8YweS4ZSq6T1Cuvz3pNCcDRE4akKZp3gsU24PAQSNx1HtRuRTRkxkWaFyqk1tWoaGaCWR7rFqAGKlXU0EN0yRktiKjFNnm384qxqbkVHnCQuYJPnsKAZGY5GkDuab8k/iHyFSuPYJKfUT8j/AFpXwie1MDmIaKoEwIMjvS8vw5SmD504bRR20RtQTW9jJOXnnBZVtsL9qk+XS2wJ6U4U3Q2NKiKYbDeo3JPn6+XnRsMnUvVEeGPrQMQ5Kjv/ALdqkMGZtEWoYkBxG8U+w7cCmraZV708xKtKCb7HbcWqWaRXUyLPH9eJceVOmTZR/dFwmekSLetZxiFklStRJUSeo3NSmPzZTiA2FOKJJkn7xkyAe8UrhrJlPuQR4RSlLSrZ144XsV9SD2NJArZcNwS2UQUj1imrvAyAbAfKsfMLsdHge5kwmuajWnYjglI2TTJrgiFTBp+YXYPLvuZ8DUvkDCg5JkAAn8q0DKuCmgZWmfWgcT5SGQFt2AsQPOaazJuiJYmkyMwPEy2H0uAzp3H40fvA/Xz+UVtODxKXW0OoulaQpJ7hQkfnXzRinTq97VvXAL05dh7iySLdgtQHvFa0cmVVuWSSZt9aHFFY6k1wimYkcrFfw/Wh/Ffw/Wm/W5MURCUk7rHrVUZamOH3gnfemoxYm6T86RmSvGR6U1eRASQTcTQkDk7JF2CARQdNewKpR7/2ommkWtx02acNiaEymjoUKQxYoyRTcTTlvagEB5V9hR2m65R0bUmUkDQ3BoeZscxlxExqQtMixEpImacVx8DQqdtJn0g1JaPlfLbuXj12A7me1a/w7liW2kKT72ifasbYGh0C8gxfeRat04dB5KQe23aseJfJHfw66kqwFUZTdKaf5djcU4+IQRNcp0WxopINooQwp7U5DyAYJ3rq8YBte8UDdjbkEVBcVsJLCgQOvz8jVp1ah0qr8XNlTSgO1qq63J+rYxTGo/adbnrvPtavoTghgIwOHSPwTtElRJk/Ovn4JJXfvX0LwVJweGkRCI9gSB9AK9CzzMpPoTArhoqtqHrBoMmMg1fpQlvwYPSl6IUIH+1JdbEkx161RkxD3iWQPL8hQ8Z4Qme1OFxqO0wOnkKb5iJ0AHoZ+lCEJwqwUn1/oKJNDwjUJNzv/QUTR60MpCG3LCovGYqHFCT02nsKcYHFAlINj9KduYYFRMD1prYl7rYFluLB8JJm5E9RUhiHCBvaozHJCCDF5EG9vP8AXepBCwodJ/Ohguw7wBlCd/f1p3TXDpgAU5BrNm0eQhxyK67dJE7g0HE7iiNK70AmfNea5fozBTKDMPACetwSD72rSnczUAlDXhVeZgFOncXBEyfO1VXifLVM5jr3UtzUALn74Mntb8quicjS94iDKkkGDBP3SB8gquXI9WlnpwjpTRVsTxS+hWkLSqTsDrJPWxvQW+KcQojxEGO1iDcfSpDH5MEgN6FgJJ0xaJ3g7+1RmJy1a1agCIEajslIFoSIEAdBRrg1VDUJLex+9neJcwvNDav2ajqWCIO6TAmagn8wxWqea5qIJUAbAC59hWsZDk8ZdylJGpSDq/mVv8jWfYbJHAAvdSSpC9xcEjvtHzBqYtR3ouVz2sZYLN3ladeIUBYyoLAAkgSYCRcEVa/+IRZxadCrIUTdRtpi9yRJgelNsvyO2gNwFRqG8/qT86nlZKhtKABEBRjePugAdtzROalyJjBxfMzHA5NzMY4FHQ0hWpX4yk3ASnub+lbpw4+hbadCSkI8Gk9AAI+kVkrVscFRMlST5CBH1ArVuFsIUB1R2UoQPQX/AF5Vopy1pdKMsuOPhOT52TLosaCyi9OFUg1ucFAVtXoLzdxTkzSXKpEtDZSJPtQXW7gk7A/0pxqvQcURppkgXXE9xQOaO4+dN1r8JMD+1B5Z8qdE2ByxpQULyB+oqdSaZMIApxrgE9qGwSojM1c1OAdEx/T9e1SeBF/SoYokzP6mrBgUwJ71T5Ex3Y9TRUUFNFSazZujjyJO1JCO1EUulpg0rGUbjHJ9brbyYCkqAV01JVMn1BA+flTnDrMAJMEGQe36BI96nc6w+psnqm/y3+k1Ui/BiuLNakelwzUoku94h49B9AU/3qOQ3zFx+zQ2m6ydz2TO1+vp50JzGeG/Sq9xQGgwA4qVEkqSLyT0I/W1ZJuT2OqoxW5o+EzFoI0a0yBE9DUJiFoS4VNONLCoDiCdlDZVusW9hWQ4XPi2QlIVoFhKiTHrVn4UxOFIXALalCASZkzOrVuTMG9aShNLkZxljvmaOlBiUkJ9RPyM0wxLxvJJPf0n+9NsHmJ0AG/TyoOIck1k52XopnsrydBfccUbmFIR3KOp8pO1thV5wiNKUp+fqd6i+HsANPNO5nT3gd/ephG9duCL+pnncTkt6V0FBV4mh4hcEbx5UpG5pKwSRWxysQp3b71K1SKSpBrjYgUyQDopBEiKcOCm80yaGjrAjakaacuqprqoCkJaUKO+jwkTvTLBrJgwR60+eVYWn0pi6DRvC+YqbZRAFR7S9vCflUilVDYRSCCiJNCJpaKk0PLF6KzXFV5J8qQxSkzVAzLC6HlIPQ29DtWg1XONGEhsOiy0mP5hcn5XrDNDUvg6eHyaJfJRuMMQWcNKT4lGJ8rmqNhsLiXzOlekkDVaAB5mJq341xGJhCiYBBAqdw2FKkaE2A2IrGOTRGkjucNbtlFa4QdJu0rpHjTePamObZNiGDIbVAvIgx6xV9Xk+ISTpxC/nanKcOoJKVeKfvE1SztDeKLRBcEvqdw5KtwqN5kQKs2HZKiEjckCoLBoRhgpCTYkq9z0qycHYjW7qIskH5xf6VlSnOyZScMfwXbDMaEJSOgA/vS9NLFcNd62PKERSVDzpZNDWaYgavWkqNdWqh6qYhCzTZe9GdVQFKpkgXKFFLdXQddACmU+dOTtTBE05QqgB00k96dIFN2acpNIaQVAoyRQEqoqTSKF14UlSwNzFQmc8UM4dJJMn86RSRYJi5qo4zNUYjFow8jSpLqU/wA3LWZ+lQWc8XrUgidM7gdPKqXhs8LWJZfJs24kq/kmF/6SaFGyoqhecYdTLxF0kE28wbipfL+IVIA1dt6vvFnDDWLTM6HP3XBeY21DqPPesqzXK8ThFaXUwCfCseJCvQ9/Iwa5Z4+56GPKny5k85xDJmSRXsRxBqTAtVXaQpe30pyxh7waxqKN/Ww6SpxUnr+XatH4Hwd9XRIMnoJEAevX2qu8NcOLfhQ8Lc3WRv3CB+967flV5zx9GFwLpR4QlshPcrX4EknqSpQrbFBt2c2fIktK3YTh7Mg4gJm4FvMVKqrI+Hs5KCL1o2BzpKwNW/eup7HA0SZoaq6lwHYiuKNBLQJVIVSl0BRsaolg3FUB02pKt6E8qmSCcXTbnVzmXFc0UCHLZFOUVHsGg4zO22jpnUrsIt6npSZSJ1pylu4kJN1AVRcVxGtXXSOybfXc0wXmp70F6TRV5sgbGmeI4iA2qjHMSRvTdeJJ60tJRY8z4jMEzWeYnMFYjESSdKPF5T0+v5UTPsYQkid6i8sdAGgylSrmf3vQ1SVFIksTiTtUXiVTanmLVHrUfNMaNx+z/N/iMC0VffbHKX6osD7p0n3qVzJLRbVztHLNla403sB6zt51mn2V5oG1vtKNlJDgHmk6VR6gp+VE+0HDPYsJUlZhElLMwg/xea/M26COs6bYWN305al1QTiVtCbAjmge6SSPQ3oTGY4Blepa3MV4p0toKER3Vrus+Vh61SGkz0gjfy8qksryxzEOBppMnr0CR+JR6Cq8tjuyvMTqrN9yHN2MS0HMOtKkbQLFBj7ik7pMRY1UftezLSyywDHMWVK80oFh/mUD7UjhvhT4SHGV6XAP2qyVkOAXKC3q0x2tI7zVX+0LN/iH2/CUhDQkHopSiT9An51Kj6tiSHwr5Bmp/CZwRaaqjR/XenTLs1TRLLoniVSBq1XG/mKnsv4rCgJNZe69Ypm5B965k+MUBpJ2qXEOhsrefNnenKcY2oWUPTY1lSMce9OG8zI60UyWjRyqabPmxqpYbPVDZXsbipNvPUqEKEHuLj+4oIcWFLpBmaV8V5UBJCgCDIk7e1d0+VUZo5mWL0MOrBgpQog9jFvrWefFmQZ/W9WTi7Ef9Pp/EoA+gBP5gVRmnjH63FKjfGtiYLxpQdpk27IoqVUyqHIxMb0Tm2qExrkmnGBd1J32oChtmqpMedOilJTpKQR59KaYsSaLhndSb7ixHYimM6WQBFz6mT86WjL9TfM5jY/aJb0FSQ4QoSVhKiBpFhJIHi3EEjizQFCkNF24fyBlnFIWMewoBTqCP2Y1gDSkCHT94qlP8ve1X5zBIgjUiAjUJjf8O/8Av5VhCEKJASCVH7sCTPSAOtazi85UEBSWpkAkqUEpBMWG5VvYgQehrHLljjVydFKLk6SILiThBgYgqGMw7etOrSooT4haRKwAD3/hURJtVu4T4fYZYQW3WlFyFKWCLyCd52EaR6/OgZrhPiHC64qFEAQDCQADESnaxPzqZ4dztOGbSy8DpSTpcT4glJMgLgAiJN42is1xuKVRUvxQ/Akt6NB5Qgp1JA0gzNrxb1v9DWR8V5cOY++H8OYdCEtpcCnCkIbGoJHQSQexSqtKdxaQ0XAQUxqBBkFMTIPUQKxTUTKjuTJ9Tc10QIYkV5aSR4VaT3if160VLdLKbVZILDYQIkySoi5JvXcALk0XErhHnsK7g0QmepoGG59EDlR7irzRkLkUhUOecacNYo96YV7mQKAoncJmqkmxt1HQ96nv+Ip/UVQA/bzP9afa6QpQTHfFmLBCGut1HyJEJH5/SqWl2DUpnzxLqz11GPaw/KobEX8Q9/I00VFUh9hnIJH6ven3MgVBsvXB9j/SpBbtqZR5ZmvYBcKIoeurzwTwWjG5diX0EDEof5bSluFDQSEMLOqAfxrvHak3QFWxCJpsPCodlW9xtWw/8gYP45OGIc0fCF4+MzzA6lEgxtBNR+RcDYHE5e06A8+6toKcLDrYW06QDoDaiE+EyPEZ8I3mlqQqM1VQlmtE4C4IZxeDLuIK0Ourcbw9yjxNpUFFSf50LkH8FNvs64NaxQfXjAtKG1oZSArSecTC0kjeCUD1Ue1GoKGvAOEaSvmOgExYESL3j0ggnvIHQg2/OE82YmDPneZhIje87dL9KRwtws2lGJ5wWpeHcKBpWlsKG8yo6RMzc1ZzgG8O8NKlRHh1CYBBBg9RP5+VfO5OCzcRxPjOVLt2Xwd8cuPHDTW5mWLypxEnSoBXmjeIJie3nUXiSpRg6rd5HoI6dfWa3DNMjadB1a9WgqBSRM+SdzVUynhJDuGK1yH18zkXgeEeGR1GoH2rsy8FUf4+fuZxz2/UZwnMlsMus3LbqSAPwLVYkdkkEyO8Hqag61vIeFMPjMGy84y8tTi1IWG3Eo5aUuLSVkKIsNIkCT2FQ/D/AARh3MdjG3VOHDYZSUJJOhRcWU6QTH7viG15Sa6uCc1iqZjmScvSQWSZ1heWhl9IgKOpTrWoaVESG3GzrSRe6h1AsBNBzvDMJQ2to3XqOlDgebSlJ02csZJk6TJA3jarPkHArBxGYtYhLivhSktBKw3qQsOLTKjAkpCbkgAzXsw4FYTmOFw7IdDb6C65JCoSm69LgEG0DrBUO4rrtGVGduDUsAbJufU7fSfnThaoFaC7wPhk5lhm0azhcU2tYOozqQhRMKjb/DPvQOPuEcPhsJz20PtLDvLCVqS4HE38cpnTITIkg9CJp6hUZys2NcYdrvSmkwaYyUBpni3b6e/5da6l61RZelRUaYEgh280/wDH2qGYd/e/yj+tOeafxH50hnM4c1LcI6KNRjTl4711b0KJ+fnQ30dRsaYJCXBG235U6adkU0UZEj3rzC6AHDztS+W8SPIwT2AAbLD6+YuUkr1fsx4VaoA/ZJ6HrUA4qj4c0MDQmvtGxfPGIjD60s8geBWnl6gvbX96Ui8x5UrL/tBxbLSG0hglpHLbdW3qdQiANIVMbJTuL6RM1SGSSQACSeguT7UZaiJBkEbg2IjvU0gLRhftIx7XJaQttCGRYBH+L+LnEqJUSZMp03UaKr7R8cElLZZZl0uqLTcFalEqUFalKsSbxBsL1SsTtI3F/wC9LC6KQGss8avKaLoTh1Kf081JbJSVJAT90q7Ab+VCb4neeWVukakwAEjSAnoAPW//AIrOsqzItmD90/Q96tOEw5fIKTpPe+28+/QR0vNq8Gc8vDZXrdx3e52xjDJHZbl+b4xdX90NhUFOrT4h5Amaa5hxNiWWklBQnQNDSNNnDtKhMkAXJBF6p+FzFbbumUQL6iASbkCDp8juO23Sd+OaUAta+Y5JBSTvExsOx2Ft43p8V/0JKNQXP9/WLHgV+ohnuJ8QEIBSylLL6sWAlKh+01rdULq+6VOKEeYFMj9omOh3QWWlPOBxxbSCFlQQhFtSlADS2kRHeofiXN0uLKW/uz4iNjGyR3E3nqQO0mGQuvQ4KGTw9WTm/wAGGZx1VEvaftGxfMccKMKVOoQ24C2opUlGuJGv/wCRQPlFAV9o2M5yXB8OFBstIHLhLTZIKuWAqxJSjeR4BaqhzKafE3J72HoK7KRjuahk3E+ZYgNrScO4rDLUUrdBC1KcQtJBIISRpX5bJqPzR7Mjh3MOvDpLbjyn1FCdSgtS9Z0lKzCZm0dTSPs3xENOj+MGfVMR/p+tXDn+f1/vUt0x0ZG+wpFlJUk9lApP1pk5W0LfJEWI7EVFZhl+HWFFbDUwbhIB27gA01MKMmxDkA0yb8/Yd/M0rELkVxrua0AOgxc7mja6Aj8Sq78WO1AA3kTegoWU+nUURtdKUAaQwK0xdO1CSb042psvegCSy7LebKi4lCUkAkgqMm4hI32PXpVmwWQsJ31unzOlP0i3uaq2TPhK1AqCQU7q2ChtPsVfOptWftJSEypwjfSCkE9d+npNS2xFmw7iUQlAbbnokAk/KPnVW4kTpfX2XCx77/UGmj3Ezv7iEI8/vH52H0qOxGNW4ZWoqO1+g/pSSAPzKTh3LEdj9OlewuCedBLbLrgTGottrWEztJSDE+dEGT4oKn4XFXgf4Lu5MJH3eptTsYfDYN12eU065G/LbWuJ2nSDGx+VSWBVj2QAhjEEGYSWXFAmCYHhkbE+EjY1K4HhtWgrZdzRCTJOnClF0FQVMPg2KV7ibGlucNvBSUl3NYLmmOUUm2oOkftj4glLomDMdjeJxjNVJWgTa3QzwbOLfSHW8GtWqbpC4JClJP702UlQN7QaTi8nzEwhWGeTrOkJCCnUYJ0yfEr7qjBJ2qSdyENNWVnLYBKQkqRoSrXpCdKRclZAtEE1I4Thpt0BaHs8UgyUqEE21JVB2B3He52uKIYsUN0l9gcpPmyi4/J8QwAp5lxsKOkFYiVRqKfWDNNg5V6/5TacAClZ2vqAUtrSlUJT3I3WB0sR6VVBwxjpI+FelKdShp2SZ8R8vCq/lVWKiNfehP0HvQJiKPnWV4hhSA+0tvVq06ouU6dUQTtqT/mplrp2BfOBHP2TvTxj/wCv+9Wnn2rPuE80bbStC1pSSoESYkQBY+1WhGKBHhXPyP5VEuYyUOJ8vkaDisX4FX/dV+RqLXiCO35f3pnjcb4F/wAqvyNIRQ3FTFFBAudhsKaaqID1NbDFqUVGu8qucyKTzTSA8DFeK6GTNeigDpNIUa6pdDJoA6TSkmhk16aQBQqlBVBmuhVADtjGOInQ44id9C1Jn1g3pbmb4j/3D+4P+K5uDIP3uhpWQ4hhGIaXiUFxhKpdQndSYNhcdY61cF57kWgj4B/UUQk2OlfLI1E8wa/HHQbzFopWBW8nzrQCHDilA/dDWJWyEk6iu2lQMkg9Ou81JOcRYdQAU1jzG05gogHTpJALXYqHoYo+c5zk61N/D4RxAD6VuSnSFMDmamwnmqgwWgbiSgm0xQ8pzXLPhkt4nCq5obdQpxpEqLiiAy7qU6AdKdRI03OntdDD4DiFi+prFqSV+JK8a4ZBCQLpSDIXCp8o86kneKGGwucPiCi2kDGPI0yIXcC8qOqekmuvcQ8Pn7mAxCQSSZAMbaSBzenit51W8qzfCIcZ57asQ2lx7na0QXGiEBghAcgKBSoxNtW5oEezjiNKwj4ZOJw5BUVzi3ndZMQbxpIjfrUSc0e35z09+auevWf4lf5j3NWhzOcnU02PhFodCGS5ob8KnEKQp5AJdkIWApIPQGYoys9yKT/0OIMLaIsBqQlSFLBHPhEgOAi+rUm4ikMpDuPdcADjrqwDIC1qUAe4BNjQSunmf4jDrfJwqFIZCW0pChpUpSUJStZTqVp1LClRJ3qOJpiF6q6m1xY9xY0Ka9NMB6jHup2dX7qJ/OlLzV0gpK5BsbCY63imOqvTRsAsGiBdABpQNMBc1ya5NemmArVSVKryEkmEgk9gCTa5sPKk6qVjPVw14qrk0gPTXq5XqQHZrs0mvUAOsJg3XdXKbcc0iVaEKXpT3MCw8zRkZNiVaQnDYgladaIacOpAiVptdPiTcWuO9THBXFpy8YlSE6nXUNhom6EqQ6lZUsBQJsDG4mJETVzyr7RWlobZQxi1cvClpaUNoe1FKMIOcU6xpA+HWIECFJO80rAy9GWPkwGXiRoMBtZMOQGzEfvSI7yIpwnJ8SQCMNiCCnWCGnIKLeMGLpuL7XrUsDx/qaQUZfiyhCcEVvNtatbeEdZWCpQMQFN4sA+adoMDyrj5DQSr4TGnkMMYZ0hoDlPNllIJVqudTchCgJMJIuaLAy3/AIViICuQ/CkFxJ5a4U2IlwGLpGoeLa4pqUHSFQdJJSFRYqABIB7gKB9xWsYPjUICGzhsxJRhkYVxCGw0S+20iBrSrmJMNqUIKSkTZQ2oOWsBbGEQrZWMcB8wUYaRRZMmopvsOMn4TcdQlayUhz/DQEqW655pQkExcXAO/Sm/EfCzuFlSwpKSRpS4h1tZntrbSlfnBnyr6G4VCGMK9i9KStKlIGolOlttWkIBCSRJBVYGSoeUC4gzxGKw77D+GZUgpaSR8QkiXUIVzEq0WCCuy+pR0rLHJzip9969jWcFjbi9317X7f71Pl6a9NSud5LyEMLDhXzkavuaNJhJITJlafFZcAGDEwYiYrUg7NemvRXKAOzXa5XKAFV2k12aYCpr00ma9NMDQPsm4tw2AXiOeVoLqWwh5tAcUjQVlSI3hWpP+S9RGccRYZ3EPOjAtkLWpQK1KQshRmVpSSgKtPhtc71WK9SaAeY/FtrSgIZS2U7lKiddgLiO4+tMa8a8KAPV6K5XqBHa5Xq9QM9NWTgTP0YLEKeWrEJHLUEhnSZcP3C4FKAUlJ8cdVJTNqrVepAXfN+P1KbwqcIg4ZTDBZXBCwQD4ChREgwSSbGVHeJpPCXFzLBxC8Ul91b7rTiko0Bs8t5OJKiCfvFbYTAEaVH0qlV6igNcw32rYZKlr+GeJfU2t4KKFELRhy1rQqRKtSWzMCQV2rM0ZjpYaQmQtt5bs2jxJZCfOZbP0qPr1AuZu3A32hpSjUlJWFkF5kHxoWEgFxH4gQACIvY2vTjjv7WYwy0Ydp1pbgKAt0BK0kg3Sif9U2tasBSYuK8oyZNyd5rKOPTsnsXrb+qn773/AHvv9vmz1emuV6tSTs16uV6gDter1eoA9Xa9XqYHa9Ncr00Af//Z" alt="hisaab barabar" height="140" width="100">
         </a></li>
     </ul>
+    </div>
 
-    <h1>2024 Movies...</h1>
+    <div class="second">
+        <h1>2024 Movies...</h1>
 <br>
    <section >
     <ul>
@@ -280,10 +283,12 @@
         <img id="imga"src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202412/agni-can-now-be-streamed-on-prime-video-photo-instagram--prime-video-in-055720324-1x1.jpg?VersionId=SPvW1WT0eoa4d.ZboSc9oONPbz3DZbLM" alt="agni" height="140" width="100">
     </a></li>
     </ul>
+    </div>
    </section>
    
   
-   <h1> 2023 Movies...</h1>
+   <div class="third">
+    <h1> 2023 Movies...</h1>
 
     <section 2>
      <ul>
@@ -329,7 +334,9 @@
      </ul>
    </section 2>
 
-<h1>2022 Movies...</h1>
+   </div>
+<div class="fourth">
+    <h1>2022 Movies...</h1>
 <br>
     <section 3>
         <ul>
@@ -368,6 +375,7 @@
             </a></li>
         </ul>
     </section 3>
+</div>
    
     <h1>Old Movies...</h1>
    <section 4>
@@ -429,7 +437,16 @@
         <li><a href="https://drive.google.com/file/d/13aBP-5FOoZqwEYd1syQAtd_YdweKy2Q5/view?usp=sharing">
             <img id="imge"src="https://assets-in.bmscdn.com/iedb/movies/images/mobile/thumbnail/xlarge/ramaiya-vastavaiya-et00014908-24-03-2017-16-10-30.jpg" height="140" width="100" alt="">
         </a></li>
-        
+        <li><a href="https://drive.google.com/file/d/1GzAQN4QUsr6JPjxrWZXHtzK8SHVO5Ksx/view?usp=sharing">
+            <img id="img"src="https://upload.wikimedia.org/wikipedia/en/b/b4/Taare_Zameen_Par_Like_Stars_on_Earth_poster.png" alt="Tare Zameen Par" height="140" width="100">
+        </a></li>
+
+        <li><a href="https://drive.google.com/file/d/1eLuvBsoUvBM2ASk1uMxooIEZe7Cvj7wV/view?usp=sharing">
+            <img id="img"src="https://upload.wikimedia.org/wikipedia/en/thumb/d/df/3_idiots_poster.jpg/250px-3_idiots_poster.jpg" alt="3 Idiots" height="140" width="100">
+        </a></li>
+        <li><a href="https://drive.google.com/file/d/1Xd-bhTD7FaNSwZHN6_yuH29AsRiYN04y/view?usp=sharing">
+            <img id="img"src="https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p12573103_p_v8_aa.jpg" alt="Sanam teri Kasam" height="140" width="100">
+        </a></li>
 
         
     </ul>
