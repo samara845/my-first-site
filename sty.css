@@ -403,13 +403,13 @@ li {
 
     .first{
     background-color: black;
-    height: 4000px;
-    width: 480px;
+    height: 5000px;
+    width: 510px;
 }
 
 .second{
     background-color: black;
-    height: 4000px;
+    height: 3000px;
     width: 480px;
 }
 #ruslaan{
@@ -428,13 +428,13 @@ li {
 
 .fourth{
     background-color: black;
-    height: 2000px;
+    height: 1700px;
     width: 480px;
 }
 .fifth{
     background-color: black;
-    height: 40px;
-    width: 10px;
+    height: 400px;
+    width: 500px;
 }
 
 
@@ -482,7 +482,7 @@ img {
     justify-content: space-between;
     align-items: center;
     height: 70px;
-    width: 90%;
+    width: 86%;
     margin-left: 10px;
     margin-bottom: 10px;
     background-color: black;

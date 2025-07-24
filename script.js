@@ -115,7 +115,25 @@ const items = {
              "Dhishoom":"https://drive.google.com/file/d/17Lgvja4br3NIsYCr7_wA9SpwtzB3-Ttv/view",
              "Sui Dhaaga":"https://drive.google.com/file/d/1fHoNc9H1deSo9TFRtswwgLNsIrwQPAC5/view",
              "Kabir Singh":"https://drive.google.com/file/d/1Oqy-vpGxXx8eyUSujgGy9tEMCfo0N3nb/view",
-             "Ramaiya Vastavaiya":"https://drive.google.com/file/d/13aBP-5FOoZqwEYd1syQAtd_YdweKy2Q5/view"
+             "Ramaiya Vastavaiya":"https://drive.google.com/file/d/13aBP-5FOoZqwEYd1syQAtd_YdweKy2Q5/view",
+             "Saiyaara":"https://drive.google.com/file/d/11o8RNEAFIFXoMUegQuhhlXJLY_XReJ4f/view",
+             "Rana Naidu":"https://drive.google.com/file/d/1986zpHS9cujmKAGlfjP48aIRF5LKT7s_/view",
+             "Maalik":"https://drive.google.com/file/d/1_Y6OqRWpX1Qo9rtGCaNS79mk4yO3w1rx/view",
+             "Kaalidhar Laapata":"https://drive.google.com/file/d/14iHMe7UIaXEmvgkXnt6VPiLe9jqcwFcL/view",
+             "Maa":"https://drive.google.com/file/d/1WdUVyclLOOj9IIcMkTGCAqVnKjZRduw6/view",
+             "Daaku Maharaj":"https://drive.google.com/file/d/1tTgkN2Vd2UICq5a32_Sbp5tO5EdB5lUs/view",
+             "Housefull 5":"https://drive.google.com/file/d/1iOEl9yjfWpGRqc0HVkTdpHRjLP2z-ICD/view",
+             "Kannappa":"https://drive.google.com/file/d/1PFqfsBxY6NzExrOjFAqO50sOGC7p_RFS/view",
+             "Sitaare Zameen Par":"https://drive.google.com/file/d/1doBNE_bqcvT1MMIeGJypT_RYLUPprIWe/view",
+             "Tabaah":"https://drive.google.com/file/d/12tWr5SHGkJ34INI-EZVwIGqp6bPghHqo/view",
+             "Stolen":"https://drive.google.com/file/d/1z-lhC0h_mMLoY3eXGPXN9PA4HDjdBi0E/view",
+             "Bhool chuk maaf":"https://drive.google.com/file/d/1a9y8CUm-eZH10rJ8WSB2WGDKyOM8W5Su/view",
+             "Taare Zameen Par":"https://drive.google.com/file/d/1GzAQN4QUsr6JPjxrWZXHtzK8SHVO5Ksx/view",
+             "3 Idiots":"https://drive.google.com/file/d/1eLuvBsoUvBM2ASk1uMxooIEZe7Cvj7wV/view",
+             "Sanam Teri Kasam":"https://drive.google.com/file/d/1Xd-bhTD7FaNSwZHN6_yuH29AsRiYN04y/view",
+             "Mitti":"https://drive.google.com/file/d/1IAKs_G_DJeAfLjcb3mQqAWKh83IlOhpD/view",
+             "Gutar gu Season 3":"https://drive.google.com/file/d/1_s10ewYxdPvZA24oxn_PP_mfxVTytb-S/view",
+             "Panchayat Season 4":"https://drive.google.com/file/d/11wH9DU101bXFmD-5uwiBZN8dvpWdm9bi/view"
         
         };
         

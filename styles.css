@@ -279,7 +279,8 @@ li {
     gap: 10px;
     padding: 10px;
     scroll-behavior: smooth;
-    max-width: 100%;
+    width: 750px;
+    margin-left: 40px;
     
 }
 .scroll-container li {
@@ -296,6 +297,7 @@ li {
 marquee{
   width: 470px;
 }
+
 
 .navbar {
       display: flex;
@@ -320,12 +322,13 @@ marquee{
 }
 
 .slider {
-      width: 610px;
+      width: 790px;
       overflow: hidden;
       position: relative;
+      margin-left: 45px;
     }
     .slide-track{
-      width: 500px;
+      width: 750px;
       margin-left: 10px;
     }
    
@@ -346,6 +349,16 @@ marquee{
     width: 70px;
     border-radius: 50px;
     border: none;
+}
+.banner {
+    text-align: center;
+    padding: 50px;
+    background: url('banner.jpg') no-repeat center center/cover;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 35px;
 }
 
 #movie-form{
