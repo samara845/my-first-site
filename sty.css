@@ -380,25 +380,12 @@ li {
         text-align: center;
         padding: 10px 0;
       }
-      h1{
-        font-size: 16px;
-        animation: bounce 0.9s ease-in-out;
-      }
-
-      #searchBox {
-    width: 90%;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-left: 30px;
-    animation: bounce 0.9s ease-in-out;
-}
+     
 
 
- #logo img {
-      height: 40px;
-       animation: bounce 0.9s ease-in-out;
-    }
+
+
+
 
 
     .first{
@@ -409,7 +396,7 @@ li {
 
 .second{
     background-color: black;
-    height: 3000px;
+    height: 3600px;
     width: 480px;
 }
 #ruslaan{
@@ -482,14 +469,26 @@ img {
     justify-content: space-between;
     align-items: center;
     height: 70px;
-    width: 86%;
-    margin-left: 10px;
-    margin-bottom: 10px;
+    padding: 0 10px;
     background-color: black;
-    box-shadow: #0a0a0a;
-    border-bottom: solid white 1px;
+    border-bottom: 1px solid white;
     position: fixed;
-    z-index: 100;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+   h1 {
+  color: #0ff; /* Neon cyan color */
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  font-family: serif;
+  font-variant: small-caps;
+  font-style: italic;
+  white-space: nowrap; /* Prevents line break */
+   animation: bounce 0.8s ease-in-out;
+  margin: 0; /* Remove unwanted vertical spacing */
+  padding: 0;
 }
 
 li {
@@ -499,20 +498,29 @@ li {
     padding: 5px;
 }
 
-#searchBox {
-    width: 70%;
-    padding: 10px;
+ .search-container {
+    position: relative;
+    width: 90%;
+    margin: 10px auto;
+    animation: bounce 0.8s ease-in-out;
+    margin-left: 60px;
+  }
+
+  #searchBox {
+    width: 500px;
+    padding: 8px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    margin-right: 20px;
     animation: bounce 0.9s ease-in-out;
-}
-.popup {
+    margin-left: -30px;
+  }
+
+  .popup {
     display: none;
     position: absolute;
     top: 100%;
     left: 0;
-    width: 100%;
+    width: 550px;
     background: aqua;
     color: black;
     border: 1px solid #ccc;
@@ -520,5 +528,20 @@ li {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
     max-height: 200px;
     overflow-y: auto;
-}
+  }
+
+  .popup div {
+    padding: 10px;
+    cursor: pointer;
+  }
+
+  .popup div:hover {
+    background-color: #0b64eb;
+  }
+
+  #logo img {
+    height: 35px;
+    animation: bounce 0.9s ease-in-out;
+    margin-left: 30px;
+  }
 }
