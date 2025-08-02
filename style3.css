@@ -196,69 +196,45 @@ li {
 
 
 /* mobile view*/
-@media  screen and (max-width: 768px) {
-      #menu-icon {
-        display: block;
-      }
+@media screen and (max-width: 768px) {
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: black;
+  }
 
-      #nav-links {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 70px;
-        right: 0;
-        width: 100%;
-        background-color: black;
-        padding: 6px 0;
-      }
+  #menu-icon {
+    display: block;
+  }
 
-      #nav-links.active {
-        display: flex;
-      }
+  #nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
+    background-color: black;
+    padding: 10px 0;
+  }
 
-      #nav-links li {
-        text-align: center;
-        padding: 10px 0;
-      }
-    
-
-
-
-
-li {
+  #nav-links.active {
     display: flex;
-    align-items: center;
-    float: left;
-    padding: 5px;
-}
-    h1 {
-    color: aqua;
-}
+  }
 
-img {
-    margin: 700px;
-    border-radius: 20px;
-    margin: 0px;
-}
-#img{
-    margin: 50px;
-}
-#imga{
-    margin: 50px;
-}
-#imgb{
-    margin: 50px;
-}
+  #nav-links li {
+    text-align: center;
+    padding: 10px 0;
+  }
 
-.change{
-    width: 560px;
-}
-
-.navbar {
+  .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 70px;
+    margin: 0;
     padding: 0 10px;
     background-color: black;
     border-bottom: 1px solid white;
@@ -267,42 +243,83 @@ img {
     top: 0;
     z-index: 1000;
   }
-   h1 {
-  color: #0ff; /* Neon cyan color */
-  font-size: 20px;
-  text-align: center;
-  font-weight: bold;
-  font-family: serif;
-  font-variant: small-caps;
-  font-style: italic;
-  white-space: nowrap; /* Prevents line break */
-   animation: bounce 0.8s ease-in-out;
-  margin: 0; /* Remove unwanted vertical spacing */
-  padding: 0;
-}
 
-li {
+  h1 {
+    color: #0ff;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-family: serif;
+    font-variant: small-caps;
+    font-style: italic;
+    white-space: nowrap;
+    animation: bounce 0.8s ease-in-out;
+    margin: 0;
+    padding: 0;
+  }
+
+  h2 {
+    color: aqua;
+    margin-top: 30px;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  li {
     display: flex;
     align-items: center;
-    float: left;
+    justify-content: center;
     padding: 5px;
-}
+    float: none;
+  }
 
- .search-container {
+  .first,
+  .second,
+  .third,
+  .fourth,
+  .fifth {
+    background-color: black;
+    width: 100%;
+    height: auto;
+    padding: 20px 10px;
+    box-sizing: border-box;
+  }
+
+  #ruslaan,
+  #stree,
+  #img,
+  #imga,
+  #imgb,
+  #imgc,
+  #imgd,
+  #imge,
+  #imgf {
+    margin: 20px auto;
+    display: block;
+    width: 90%;
+    border-radius: 20px;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .search-container {
     position: relative;
     width: 90%;
-    margin: 10px auto;
+    margin: 20px auto;
     animation: bounce 0.8s ease-in-out;
-    margin-left: 60px;
   }
 
   #searchBox {
-    width: 500px;
+    width: 80%;
     padding: 8px;
+    margin-left: 9px;
     border: 1px solid #ccc;
     border-radius: 5px;
     animation: bounce 0.9s ease-in-out;
-    margin-left: -30px;
   }
 
   .popup {
@@ -310,7 +327,7 @@ li {
     position: absolute;
     top: 100%;
     left: 0;
-    width: 550px;
+    width: 100%;
     background: aqua;
     color: black;
     border: 1px solid #ccc;
@@ -332,13 +349,6 @@ li {
   #logo img {
     height: 35px;
     animation: bounce 0.9s ease-in-out;
-    margin-left: 30px;
+    margin-left: 10px;
   }
-.webseries{
-    height: 2000px;
-    width: 470px;
-}
-ul{
-    margin-left: -20px;
-}
 }

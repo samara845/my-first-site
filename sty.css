@@ -113,13 +113,13 @@ h1 {
 
 .first{
     background-color: black;
-    height: 1950px;
+    height: 2100px;
     width: 1400px;
 }
 
 .second{
     background-color: black;
-    height: 1300px;
+    height: 1500px;
     width: 1400px;
 }
 #ruslaan{
@@ -356,119 +356,45 @@ li {
     border-radius: 10px;
 }
 /* mobile view*/
-@media  screen and (max-width: 768px) {
-      #menu-icon {
-        display: block;
-      }
-
-      #nav-links {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 70px;
-        right: 0;
-        width: 100%;
-        background-color: black;
-        padding: 10px 0;
-      }
-
-      #nav-links.active {
-        display: flex;
-      }
-
-      #nav-links li {
-        text-align: center;
-        padding: 10px 0;
-      }
-     
-
-
-
-
-
-
-
-    .first{
+@media screen and (max-width: 768px) {
+  body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
     background-color: black;
-    height: 5000px;
-    width: 510px;
-}
+  }
 
-.second{
+  #menu-icon {
+    display: block;
+  }
+
+  #nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 100%;
     background-color: black;
-    height: 3600px;
-    width: 480px;
-}
-#ruslaan{
-    margin-top: 50px;
-    margin-left: 50px;
-}
-#stree{
-    margin-top: 50px;
-    margin-left: 50px;
-}
-.third{
-    background-color: black;
-    height: 2200px;
-    width: 480px;
-}
+    padding: 10px 0;
+  }
 
-.fourth{
-    background-color: black;
-    height: 1700px;
-    width: 480px;
-}
-.fifth{
-    background-color: black;
-    height: 400px;
-    width: 500px;
-}
+  #nav-links.active {
+    display: flex;
+  }
 
+  #nav-links li {
+    text-align: center;
+    padding: 10px 0;
+  }
 
-
-#img{
-    margin: 50px;
-}
-#imga{
-    margin: 50px;
-}
-#imgb{
-    margin: 50px;
-}
-#imgc{
-    margin: 50px;
-}
-#imgd{
-    margin: 50px;
-}
-#imge{
-    margin: 50px;
-}
-#imgb{
-    margin: 50px;
-}
-#imgf{
-    margin: 50px;
-}
-
-h2{
-    color: aqua;
-    margin-top: 55px;
-}
-h1 {
-    color: aqua;
-}
-img {
-    margin: 400px;
-    border-radius: 20px;
-    margin: 0px;
-}
-
-.navbar {
+  .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 70px;
+    margin: 0;
     padding: 0 10px;
     background-color: black;
     border-bottom: 1px solid white;
@@ -477,42 +403,83 @@ img {
     top: 0;
     z-index: 1000;
   }
-   h1 {
-  color: #0ff; /* Neon cyan color */
-  font-size: 20px;
-  text-align: center;
-  font-weight: bold;
-  font-family: serif;
-  font-variant: small-caps;
-  font-style: italic;
-  white-space: nowrap; /* Prevents line break */
-   animation: bounce 0.8s ease-in-out;
-  margin: 0; /* Remove unwanted vertical spacing */
-  padding: 0;
-}
 
-li {
+  h1 {
+    color: #0ff;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-family: serif;
+    font-variant: small-caps;
+    font-style: italic;
+    white-space: nowrap;
+    animation: bounce 0.8s ease-in-out;
+    margin: 0;
+    padding: 0;
+  }
+
+  h2 {
+    color: aqua;
+    margin-top: 30px;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  li {
     display: flex;
     align-items: center;
-    float: left;
+    justify-content: center;
     padding: 5px;
-}
+    float: none;
+  }
 
- .search-container {
+  .first,
+  .second,
+  .third,
+  .fourth,
+  .fifth {
+    background-color: black;
+    width: 100%;
+    height: auto;
+    padding: 20px 10px;
+    box-sizing: border-box;
+  }
+
+  #ruslaan,
+  #stree,
+  #img,
+  #imga,
+  #imgb,
+  #imgc,
+  #imgd,
+  #imge,
+  #imgf {
+    margin: 20px auto;
+    display: block;
+    width: 90%;
+    border-radius: 20px;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .search-container {
     position: relative;
     width: 90%;
-    margin: 10px auto;
+    margin: 20px auto;
     animation: bounce 0.8s ease-in-out;
-    margin-left: 60px;
   }
 
   #searchBox {
-    width: 500px;
+    width: 80%;
     padding: 8px;
+    margin-left: 9px;
     border: 1px solid #ccc;
     border-radius: 5px;
     animation: bounce 0.9s ease-in-out;
-    margin-left: -30px;
   }
 
   .popup {
@@ -520,7 +487,7 @@ li {
     position: absolute;
     top: 100%;
     left: 0;
-    width: 550px;
+    width: 100%;
     background: aqua;
     color: black;
     border: 1px solid #ccc;
@@ -542,6 +509,6 @@ li {
   #logo img {
     height: 35px;
     animation: bounce 0.9s ease-in-out;
-    margin-left: 30px;
+    margin-left: 10px;
   }
 }
