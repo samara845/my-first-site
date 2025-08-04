@@ -416,6 +416,7 @@ li {
     animation: bounce 0.8s ease-in-out;
     margin: 0;
     padding: 0;
+    margin-left: 10px;
   }
 
   h2 {
@@ -468,15 +469,15 @@ li {
 
   .search-container {
     position: relative;
-    width: 90%;
+    width: 85%;
     margin: 20px auto;
     animation: bounce 0.8s ease-in-out;
   }
 
   #searchBox {
-    width: 80%;
+    width: 75%;
     padding: 8px;
-    margin-left: 9px;
+    margin-left: 19px;
     border: 1px solid #ccc;
     border-radius: 5px;
     animation: bounce 0.9s ease-in-out;

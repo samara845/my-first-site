@@ -133,8 +133,22 @@ const items = {
              "Sanam Teri Kasam":"https://drive.google.com/file/d/1Xd-bhTD7FaNSwZHN6_yuH29AsRiYN04y/view",
              "Mitti":"https://drive.google.com/file/d/1IAKs_G_DJeAfLjcb3mQqAWKh83IlOhpD/view",
              "Gutar gu Season 3":"https://drive.google.com/file/d/1_s10ewYxdPvZA24oxn_PP_mfxVTytb-S/view",
-             "Panchayat Season 4":"https://drive.google.com/file/d/11wH9DU101bXFmD-5uwiBZN8dvpWdm9bi/view"
-        
+             "Panchayat Season 4":"https://drive.google.com/file/d/11wH9DU101bXFmD-5uwiBZN8dvpWdm9bi/view",
+             "Narsimha" : "https://drive.google.com/file/d/1J5vsL2DOoXx86sqDDCLKZUsj2KZbZm19/view",
+             "Aap jaisa koi" : "https://drive.google.com/file/d/1PHCbJRPU0qrvr4ruHwoXgXRn5GXaS6rH/view",
+             "Sarzameen" : "https://drive.google.com/file/d/1HRyrjBIFxh3h1H4RjRLo916MPP_1Da0J/view",
+             "Metro in dino" : "https://drive.google.com/file/d/1K_JdhB9WACSm4rJJHEoAKbu38gQcI1vn/view",
+             "Pune Highway" : "https://drive.google.com/file/d/1WFC5GLVbUqcwu9wGGLrm0zoMPn-LHm9T/view",
+             "Mandala murders" : "https://drive.google.com/file/d/1mmo8PHKqLc7FDUi3tYK0cFirQVvfOhfO/view",
+             "Kingdom" : "https://drive.google.com/file/d/1OA5NGSoagnk1UD-eRwHRRARRuePysNO_/view",
+             "Show Time" : "https://drive.google.com/file/d/1zJtb34LhMlkN-GVsPFPPo-rYIEwi3l74/view",
+             "Nikita Roy" : "https://drive.google.com/file/d/1AsO88eH1YcEjHz7gxcYOmk90iIUKiYBv/view",
+             "Son of Sardar" : "https://drive.google.com/file/d/1jBkEp_fopY4rYsj9OZLcx-91TAtUMm0q/view",
+             "Dhadak 2" : "https://drive.google.com/file/d/10Dgp72F2bLY3JDJyon2cA6eky2_dxlgz/view",
+             "Moh" : "https://drive.google.com/file/d/1QM3phMICm_s-j8OuMjdNw9Nicnb37RaK/view",
+             "Campus" : "https://drive.google.com/file/d/1NPWijN6RhZyPrgAGXUMESsxRBvzVuisk/view",
+             "INspector Avinash" : "https://drive.google.com/file/d/1-5UTzJfC6FzuBdj90dMZtPkCmGEroRCO/view",
+             "Hunter 2" : "https://drive.google.com/file/d/1RweKaPsEJ86yN7Rxxc158LvnG5kwNKa3/view",
         };
         
         function showResults() {
