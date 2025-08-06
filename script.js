@@ -149,6 +149,9 @@ const items = {
              "Campus" : "https://drive.google.com/file/d/1NPWijN6RhZyPrgAGXUMESsxRBvzVuisk/view",
              "INspector Avinash" : "https://drive.google.com/file/d/1-5UTzJfC6FzuBdj90dMZtPkCmGEroRCO/view",
              "Hunter 2" : "https://drive.google.com/file/d/1RweKaPsEJ86yN7Rxxc158LvnG5kwNKa3/view",
+             "Hollywood Movies" : "file:///C:/Users/samar/Documents/once%20again%20movieadda/index4.html",
+             "Movies" : "file:///C:/Users/samar/Documents/once%20again%20movieadda/index2.html",
+             "Web Series" : "file:///C:/Users/samar/Documents/once%20again%20movieadda/index%20(3).html",
         };
         
         function showResults() {
