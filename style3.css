@@ -286,7 +286,7 @@ li {
     box-sizing: border-box;
   }
 
-  #ruslaan,
+  /* #ruslaan,
   #stree,
   #img,
   #imga,
@@ -305,19 +305,20 @@ li {
     width: 100%;
     height: auto;
     border-radius: 10px;
-  }
+  } */
 
   .search-container {
     position: relative;
     width: 85%;
     margin: 20px auto;
     animation: bounce 0.8s ease-in-out;
+    margin-left: 25px;
   }
 
   #searchBox {
     width: 75%;
     padding: 8px;
-    margin-left: 9px;
+    margin-left: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
     animation: bounce 0.9s ease-in-out;
@@ -345,6 +346,12 @@ li {
 
   .popup div:hover {
     background-color: #0b64eb;
+  }
+  .alm , li img{
+    height: 350px;
+    width: 360px;
+    display: flex;
+    
   }
 
   #logo img {

@@ -284,7 +284,7 @@ li {
     width: 100%;
     margin: 10px auto;
     animation: bounce 0.8s ease-in-out;
-    margin-left: 60px;
+    margin-left: 25px;
   }
 
   #searchBox {
@@ -293,7 +293,7 @@ li {
     border: 1px solid #ccc;
     border-radius: 5px;
     animation: bounce 0.9s ease-in-out;
-    
+    margin-left: -10px;
   }
 
   .popup {
