@@ -152,6 +152,8 @@ const items = {
              "Hollywood Movies" : "https://www.movieadda.fun/index4.html",
              "Movies" : "https://www.movieadda.fun/index2.html",
              "Web Series" : "https://www.movieadda.fun/index%20(3).html",
+             "War 2" : "https://drive.google.com/file/d/1UaLzIF9ZIHhxJj8IXcjI9Wyp1_6YdVE8/view",
+             "Coolie" : "https://drive.google.com/file/d/1BIIlvjffpvy2-GSXbwgmKsP5eAWg3R_J/view",
         };
         
         function showResults() {
