@@ -159,6 +159,14 @@ const items = {
              "Dragon" : "http://drive.google.com/file/d/14aurJU7M2RHijVsZJPI5yNtE9raBMZvc/view",
              "Jewel Theif" : "https://drive.google.com/file/d/1-2hW4QYd1dUT_4Kvqv26bCkHN1EOcXH8/view",
              "Vash" : "https://drive.google.com/file/d/1-6_OncPbl-4Dgo6lWTI1xIvinw9wXJm0/view", 
+             "Param Sundari" : "http://drive.google.com/file/d/1s2zFAZ3TfcThZdJeboAndY93wVgdHA76/view",
+             "Vash 2" : "https://drive.google.com/file/d/1uXA1WHZbPtwkil1V6k56sOU1fD3eCbzl/view",
+             "odela 2" : "https://drive.google.com/file/d/1HKLsSjqNtTWpF5_vVglicMwrWCuGW2Rj/view",
+             "kankhajura" : "https://drive.google.com/file/d/1NeP_nTByD76tthUsHqGVifxdZMyosF-E/view",
+             "veer zaraa" : "https://drive.google.com/file/d/1pX8nJ86T4TRBIJOtAxUrgWwhTDOOc-u4/view",
+             "andhadhun" : "https://drive.google.com/file/d/1J1RYJgkIedf_4B-bgddBZHzXFJkKIM8O/view",
+             "pardesh" : "https://drive.google.com/file/d/1_YiZb1FI-d7xOQ65U8-UFpC8wfU28bKJ/view",
+             "pathaan" : "https://drive.google.com/file/d/1yjb3Iq2Sjy90-PnABRcpOsZWXQ9_u5A_/view",
         };
         
         function showResults() {
