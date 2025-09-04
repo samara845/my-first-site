@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Delegate-CH" content="Sec-CH-UA https://s.magsrv.com; Sec-CH-UA-Mobile https://s.magsrv.com; Sec-CH-UA-Arch https://s.magsrv.com; Sec-CH-UA-Model https://s.magsrv.com; Sec-CH-UA-Platform https://s.magsrv.com; Sec-CH-UA-Platform-Version https://s.magsrv.com; Sec-CH-UA-Bitness https://s.magsrv.com; Sec-CH-UA-Full-Version-List https://s.magsrv.com; Sec-CH-UA-Full-Version https://s.magsrv.com;">
+  <title>Param Sundari Full Movie | Movie Adda</title>
+  <style>
+    body { background: #000; color: #fff; font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    header { background: #1c1c1c; padding: 15px; text-align: center; font-size: 24px; color: #04f3fc; }
+    .video-container { max-width: 900px; margin: 20px auto; background: #000; border-radius: 12px; overflow: hidden; }
+    video, iframe { width: 100%; height: 500px; border: none; display: block; }
+    #player, #mid-ad { display: none; }
+  </style>
+</head>
+<body>
+
+<header>Param Sundari - Movie Streaming On Movie Adda</header>
+
+<div class="video-container">
+  
+  <!-- Pre-roll Ad -->
+  <div id="ad-container">
+    <video id="adVideo" autoplay controls>
+      <source src="C:\Users\samar\Downloads\WAR 2 _ Official Trailer _ Hrithik Roshan _ NTR _ Kiara Advani _ Ayan Mukerji _ YRF Spy Universe.mp4" type="video/mp4">
+    </video>
+  </div>
+
+  <!-- Movie -->
+  <div id="player">
+ <iframe src="http://gdriveplayer.to/embed2.php?link=https://drive.google.com/file/d/1s2zFAZ3TfcThZdJeboAndY93wVgdHA76/view&subtitle=&poster=&jsonsubtitle=&encrypt=yes" frameborder="0" width="100%" height="400" allowfullscreen="allowfullscreen"></iframe>
+     
+  </div>
+
+  <!-- Mid-roll Ad -->
+  <div id="mid-ad">
+    <video id="midAdVideo" controls>
+      <source src="C:\Users\samar\Downloads\WAR 2 _ Official Trailer _ Hrithik Roshan _ NTR _ Kiara Advani _ Ayan Mukerji _ YRF Spy Universe.mp4" type="video/mp4">
+    </video>
+  </div>
+
+</div>
+
+ <!-- <video id="movie" controls>
+ <source src="https://drive.google.com/file/d/1s2zFAZ3TfcThZdJeboAndY93wVgdHA76/view" style="background-color: aqua;"></video> -->
+
+
+ <link href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet" />
+<script src="https://vjs.zencdn.net/7.20.3/video.min.js"></script>
+
+<video id="myVideo" class="video-js vjs-default-skin" controls autoplay preload="auto" width="800" height="450">
+  <source src="stream.php?id=1s2zFAZ3TfcThZdJeboAndY93wVgdHA76" type="video/mp4">
+</video>
+
+ <link href="https://vjs.zencdn.net/7.11.4/video-js.css" rel="stylesheet">
+<script src="https://vjs.zencdn.net/7.11.4/video.min.js"></script>
+<script src="https://unpkg.com/videojs-contrib-ads@6.9.0/dist/videojs-contrib-ads.min.js"></script>
+<script src="https://unpkg.com/videojs-ima@1.7.0/dist/videojs.ima.min.js"></script>
+
+<video id="my-video" class="video-js vjs-big-play-centered" controls preload="auto" width="840" height="480">
+  <source src="https://drive.google.com/file/d/1s2zFAZ3TfcThZdJeboAndY93wVgdHA76/view" type="video/mp4">
+</video>
+
+
+<script>
+  var player = videojs('my-video');
+  player.ima({
+    adTagUrl: "https://ads.exoclick.com/tag.php?https://s.magsrv.com/v1/vast.php?idzone=5716214"
+  });
+</script>
+
+
+<script>
+  // Pre-roll logic
+  var ad = document.getElementById("adVideo");
+  ad.onended = function() {
+    document.getElementById("ad-container").style.display = "none";
+    document.getElementById("player").style.display = "block";
+
+    // Mid-roll after 10 min
+    setTimeout(showMidAd, 600000);
+  };
+
+  // Mid-roll logic
+  function showMidAd() {
+    document.getElementById("player").style.display = "none";
+    document.getElementById("mid-ad").style.display = "block";
+    document.getElementById("midAdVideo").play();
+  }
+
+  var midAd = document.getElementById("midAdVideo");
+  midAd.onended = function() {
+    document.getElementById("mid-ad").style.display = "none";
+    document.getElementById("player").style.display = "block";
+  };
+</script>
+
+<script async type="application/javascript" src="https://a.magsrv.com/ad-provider.js"></script> 
+ <ins class="eas6a97888e31" data-zoneid="5716206" data-keywords="keywords" data-sub="123450000" data-block-ad-types="0"></ins> 
+ <script>(AdProvider = window.AdProvider || []).push({"serve": {}});</script>
+</body>
+</html>
