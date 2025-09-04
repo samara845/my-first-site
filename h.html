@@ -3,67 +3,51 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Movie Player with Ads</title>
+  <title>Movie with Ads</title>
 
   <!-- Video.js CSS -->
   <link href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet" />
 
-  <!-- IMA Ads Plugin CSS -->
+  <!-- IMA CSS -->
   <link rel="stylesheet" href="https://unpkg.com/videojs-ima@1.9.0/dist/videojs.ima.css">
-  
-  <style>
-    body {
-      background: #111;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-      margin: 0;
-    }
-    .video-js {
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 0 20px rgba(0,0,0,0.6);
-    }
-  </style>
 </head>
-<body>
+<body style="background:#111;display:flex;justify-content:center;align-items:center;height:100vh;">
 
-  <!-- Video Player -->
   <video id="myVideo" class="video-js vjs-default-skin" width="900" height="500" controls preload="auto">
     <source src="stream.php?id=1s2zFAZ3TfcThZdJeboAndY93wVgdHA76" type="video/mp4" />
   </video>
 
-  <!-- Video.js JS -->
+  <!-- Video.js -->
   <script src="https://vjs.zencdn.net/7.20.3/video.min.js"></script>
 
-  <!-- Ads Plugins -->
+  <!-- Ads -->
   <script src="https://unpkg.com/videojs-contrib-ads@6.9.0/dist/videojs-contrib-ads.min.js"></script>
   <script src="https://unpkg.com/videojs-ima@1.9.0/dist/videojs.ima.min.js"></script>
 
   <script>
     var player = videojs('myVideo');
 
-    // ExoClick Ad Integration
+    // Init IMA
     player.ima({
       id: 'myVideo',
       adTagUrl: 'https://syndication.exoclick.com/ads-xml.php?idzone=5716214'
     });
 
-    // ✅ Pre-roll Ad (before movie starts)
-    player.on('ready', function() {
+    // ✅ Ads request only after first play (user interaction required)
+    player.one('play', function() {
+      player.ima.initializeAdDisplayContainer();
       player.ima.requestAds();
     });
 
-    // ✅ Mid-roll Ad (15 minutes after movie starts)
+    // ✅ Mid-roll (15 min after start)
     player.on('timeupdate', function() {
-      if (player.currentTime() >= 900 && !player.midrollPlayed) { 
+      if (player.currentTime() >= 900 && !player.midrollPlayed) {
         player.ima.requestAds();
         player.midrollPlayed = true;
       }
     });
 
-    // ✅ End-roll Ad (10 minutes before movie ends)
+    // ✅ End-roll (10 min before end)
     player.on('timeupdate', function() {
       var duration = player.duration();
       if (duration && player.currentTime() >= duration - 600 && !player.endrollPlayed) {
@@ -72,6 +56,5 @@
       }
     });
   </script>
-
 </body>
 </html>
