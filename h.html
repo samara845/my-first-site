@@ -2,59 +2,76 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Movie with Ads</title>
-
-  <!-- Video.js CSS -->
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+  <script src="https://vjs.zencdn.net/7.20.3/video.min.js"></script>
   <link href="https://vjs.zencdn.net/7.20.3/video-js.css" rel="stylesheet" />
 
-  <!-- IMA CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/videojs-ima@1.9.0/dist/videojs.ima.css">
+  <!-- Video.js IMA Ads Plugin -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-ads/6.9.0/videojs-contrib-ads.min.js"></script>
+  <script src="https://imasdk.googleapis.com/js/sdkloader/ima3.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-ima/1.8.0/videojs.ima.min.js"></script>
+
+  <style>
+    body { background: #000; color: #fff; text-align: center; }
+    #moviePlayer { width: 80%; height: 450px; margin-top: 30px; }
+  </style>
 </head>
-<body style="background:#111;display:flex;justify-content:center;align-items:center;height:100vh;">
+<body>
 
-  <video id="myVideo" class="video-js vjs-default-skin" width="900" height="500" controls preload="auto">
-    <source src="stream.php?id=1s2zFAZ3TfcThZdJeboAndY93wVgdHA76" type="video/mp4" />
-  </video>
-
-  <!-- Video.js -->
-  <script src="https://vjs.zencdn.net/7.20.3/video.min.js"></script>
-
-  <!-- Ads -->
-  <script src="https://unpkg.com/videojs-contrib-ads@6.9.0/dist/videojs-contrib-ads.min.js"></script>
-  <script src="https://unpkg.com/videojs-ima@1.9.0/dist/videojs.ima.min.js"></script>
+  <h2>🎬 Movie Player with ExoClick Ads</h2>
+  
+  <video id="moviePlayer" class="video-js vjs-default-skin" controls></video>
 
   <script>
-    var player = videojs('myVideo');
+    var video = document.getElementById('moviePlayer');
 
-    // Init IMA
+    // ✅ Bunny Stream HLS video link (replace with your Bunny Stream URL)
+    var movieURL = "https://vz-1d21e73f-5e9.b-cdn.net/3a2d5e64-eb6f-4ae4-b3e9-1c956b543398/playlist.m3u8";  
+
+    // ✅ Initialize HLS.js
+    if (Hls.isSupported()) {
+      var hls = new Hls();
+      hls.loadSource(movieURL);
+      hls.attachMedia(video);
+    } else if (video.canPlayType('application/vnd.apple.mpegurl')) {
+      video.src = movieURL;
+    }
+
+    // ✅ Initialize Video.js
+    var player = videojs('moviePlayer');
+
+    // ✅ ExoClick VAST Tag (replace with your tag)
+    var vastTag = "https://syndication.exoclick.com/splash.php?idzone=5716214";
+
+    // ✅ IMA Ads setup
     player.ima({
-      id: 'myVideo',
-      adTagUrl: 'https://syndication.exoclick.com/ads-xml.php?idzone=5716214'
+      id: 'moviePlayer',
+      adTagUrl: vastTag
     });
 
-    // ✅ Ads request only after first play (user interaction required)
-    player.one('play', function() {
+    // Pre-roll Ad (auto handled by IMA plugin)
+    player.ready(function() {
       player.ima.initializeAdDisplayContainer();
       player.ima.requestAds();
     });
 
-    // ✅ Mid-roll (15 min after start)
+    // Mid-roll (15 min = 900s)
     player.on('timeupdate', function() {
-      if (player.currentTime() >= 900 && !player.midrollPlayed) {
+      if (player.currentTime() >= 900 && !player.midAdPlayed) {
+        player.midAdPlayed = true;
         player.ima.requestAds();
-        player.midrollPlayed = true;
       }
     });
 
-    // ✅ End-roll (10 min before end)
+    // Last-roll (movie ke last 10 min pe ad)
     player.on('timeupdate', function() {
-      var duration = player.duration();
-      if (duration && player.currentTime() >= duration - 600 && !player.endrollPlayed) {
+      if ((player.duration() - player.currentTime()) <= 600 && !player.lastAdPlayed) {
+        player.lastAdPlayed = true;
         player.ima.requestAds();
-        player.endrollPlayed = true;
       }
     });
   </script>
+
 </body>
 </html>
