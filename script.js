@@ -167,6 +167,7 @@ const items = {
              "andhadhun" : "https://drive.google.com/file/d/1J1RYJgkIedf_4B-bgddBZHzXFJkKIM8O/view",
              "pardesh" : "https://drive.google.com/file/d/1_YiZb1FI-d7xOQ65U8-UFpC8wfU28bKJ/view",
              "pathaan" : "https://drive.google.com/file/d/1yjb3Iq2Sjy90-PnABRcpOsZWXQ9_u5A_/view",
+             "Baaghi 4" : "https://www.movieadda.fun/baaghi4.html",
         };
         
         function showResults() {

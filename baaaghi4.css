@@ -115,6 +115,20 @@ header {
   overflow: hidden;
   box-shadow: 0 0 15px rgba(0, 247, 255, 0.4);
 }
+
+a img{
+padding: 10px;
+border-radius: 50px;
+}
+
+
+
+
+.watch{
+display: flex;
+overflow-x: scroll;
+margin-left: 5px;
+}
   .container {
     padding: 3px;
   }
@@ -143,6 +157,20 @@ header {
   header {
     font-size: 22px;
   }
+  
+a img{
+padding: 10px;
+border-radius: 50px;
+}
+
+
+
+
+.watch{
+display: flex;
+overflow-x: scroll;
+margin-left: 5px;
+}
   .details h2 {
     font-size: 24px;
   }
