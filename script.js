@@ -159,7 +159,7 @@ const items = {
              "Dragon" : "http://drive.google.com/file/d/14aurJU7M2RHijVsZJPI5yNtE9raBMZvc/view",
              "Jewel Theif" : "https://drive.google.com/file/d/1-2hW4QYd1dUT_4Kvqv26bCkHN1EOcXH8/view",
              "Vash" : "https://drive.google.com/file/d/1-6_OncPbl-4Dgo6lWTI1xIvinw9wXJm0/view", 
-             "Param Sundari" : "http://drive.google.com/file/d/1s2zFAZ3TfcThZdJeboAndY93wVgdHA76/view",
+             "Param Sundari" : "https://www.movieadda.fun/Param%20Sundari.html",
              "Vash 2" : "https://drive.google.com/file/d/1uXA1WHZbPtwkil1V6k56sOU1fD3eCbzl/view",
              "odela 2" : "https://drive.google.com/file/d/1HKLsSjqNtTWpF5_vVglicMwrWCuGW2Rj/view",
              "kankhajura" : "https://drive.google.com/file/d/1NeP_nTByD76tthUsHqGVifxdZMyosF-E/view",
@@ -169,6 +169,7 @@ const items = {
              "pathaan" : "https://drive.google.com/file/d/1yjb3Iq2Sjy90-PnABRcpOsZWXQ9_u5A_/view",
              "Baaghi 4" : "https://www.movieadda.fun/baaghi4.html",
              "Wednesday" : "https://www.movieadda.fun/wednesday.html",
+             "lokah chapter 2" : "http://movieadda.fun/lokah.html",
         };
         
         function showResults() {
