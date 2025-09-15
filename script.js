@@ -148,7 +148,7 @@ const items = {
              "Moh" : "https://drive.google.com/file/d/1QM3phMICm_s-j8OuMjdNw9Nicnb37RaK/view",
              "Campus" : "https://drive.google.com/file/d/1NPWijN6RhZyPrgAGXUMESsxRBvzVuisk/view",
              "INspector Avinash" : "https://drive.google.com/file/d/1-5UTzJfC6FzuBdj90dMZtPkCmGEroRCO/view",
-             "Hunter 2" : "https://drive.google.com/file/d/1RweKaPsEJ86yN7Rxxc158LvnG5kwNKa3/view",
+             "Hunter 2" : "https://www.movieadda.fun/index11.html",
              "Hollywood Movies" : "https://www.movieadda.fun/index4.html",
              "Movies" : "https://www.movieadda.fun/index2.html",
              "Web Series" : "https://www.movieadda.fun/index%20(3).html",
@@ -170,6 +170,11 @@ const items = {
              "Baaghi 4" : "https://www.movieadda.fun/baaghi4.html",
              "Wednesday" : "https://www.movieadda.fun/wednesday.html",
              "lokah chapter 2" : "http://movieadda.fun/lokah.html",
+             "Shershaah" : "https://www.movieadda.fun/index9.html",
+             "De De Pyaar De" : "https://www.movieadda.fun/pyar%20de.html",
+             "Hunter S01" : "https://www.movieadda.fun/index10.html",
+             "The Incredible Hulk" : "https://www.movieadda.fun/index14.html",
+             "Fallout" : "https://www.movieadda.fun/index13.html",
         };
         
         function showResults() {
