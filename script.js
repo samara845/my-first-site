@@ -176,6 +176,7 @@ const items = {
              "The Incredible Hulk" : "https://www.movieadda.fun/index14.html",
              "Fallout" : "https://www.movieadda.fun/index13.html",
              "Jolly LLB 3" : "https://www.movieadda.fun/index18.html",
+             "Mirai" : "http://movieadda.fun/index17.html",
         };
         
         function showResults() {
