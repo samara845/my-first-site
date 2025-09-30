@@ -177,6 +177,8 @@ const items = {
              "Fallout" : "https://www.movieadda.fun/index13.html",
              "Jolly LLB 3" : "https://www.movieadda.fun/index18.html",
              "Mirai" : "http://movieadda.fun/index17.html",
+             "The Bads of Bollywood" : "https://www.movieadda.fun/index19.html",
+             "Ajey" : "https://www.movieadda.fun/index20.html",
         };
         
         function showResults() {
