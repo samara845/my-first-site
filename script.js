@@ -114,7 +114,7 @@ const items = {
              "Satyameva Jayate 2":"https://drive.google.com/file/d/1CSraXFVOtjazPidb695oAPGto0LmoCbi/view",
              "Dhishoom":"https://drive.google.com/file/d/17Lgvja4br3NIsYCr7_wA9SpwtzB3-Ttv/view",
              "Sui Dhaaga":"https://drive.google.com/file/d/1fHoNc9H1deSo9TFRtswwgLNsIrwQPAC5/view",
-             "Kabir Singh":"https://drive.google.com/file/d/1Oqy-vpGxXx8eyUSujgGy9tEMCfo0N3nb/view",
+             "Kabir Singh":"https://www.movieadda.fun/index21.html",
              "Ramaiya Vastavaiya":"https://drive.google.com/file/d/13aBP-5FOoZqwEYd1syQAtd_YdweKy2Q5/view",
              "Saiyaara":"https://drive.google.com/file/d/11o8RNEAFIFXoMUegQuhhlXJLY_XReJ4f/view",
              "Rana Naidu":"https://drive.google.com/file/d/1986zpHS9cujmKAGlfjP48aIRF5LKT7s_/view",
