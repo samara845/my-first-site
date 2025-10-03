@@ -179,6 +179,7 @@ const items = {
              "Mirai" : "http://movieadda.fun/index17.html",
              "The Bads of Bollywood" : "https://www.movieadda.fun/index19.html",
              "Ajey" : "https://www.movieadda.fun/index20.html",
+             "Sunny Sanskari ki Tulsi Kumari" : "https://www.movieadda.fun/index22.html",
         };
         
         function showResults() {
