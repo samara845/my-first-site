@@ -181,6 +181,8 @@ const items = {
              "Ajey" : "https://www.movieadda.fun/index20.html",
              "Sunny Sanskari ki Tulsi Kumari" : "https://www.movieadda.fun/index22.html",
              "Kantara" : "https://www.movieadda.fun/index23.html",
+             "janaawar" : "https://www.movieadda.fun/index24.html",
+             "What a Kismat" : "https://www.movieadda.fun/index25.html",
         };
         
         function showResults() {
