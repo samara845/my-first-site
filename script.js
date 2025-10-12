@@ -183,6 +183,8 @@ const items = {
              "Kantara" : "https://www.movieadda.fun/index23.html",
              "janaawar" : "https://www.movieadda.fun/index24.html",
              "What a Kismat" : "https://www.movieadda.fun/index25.html",
+             "Jaadugar" : "https://www.movieadda.fun/index26.html",
+
         };
         
         function showResults() {
