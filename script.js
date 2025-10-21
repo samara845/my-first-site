@@ -184,6 +184,9 @@ const items = {
              "janaawar" : "https://www.movieadda.fun/index24.html",
              "What a Kismat" : "https://www.movieadda.fun/index25.html",
              "Jaadugar" : "https://www.movieadda.fun/index26.html",
+             "Controls" : "https://www.movieadda.fun/index27.html",
+             "Our Fault" : "https://www.movieadda.fun/index28.html",
+             "Ek Deewane ki Deewaniyat" : "https://www.movieadda.fun/index29.html",
 
         };
         
