@@ -187,6 +187,8 @@ const items = {
              "Controls" : "https://www.movieadda.fun/index27.html",
              "Our Fault" : "https://www.movieadda.fun/index28.html",
              "Ek Deewane ki Deewaniyat" : "https://www.movieadda.fun/index29.html",
+             "Bhagwat Chapter one Raakshas" : "https://www.movieadda.fun/index31.html",
+             "Thamma" : "https://www.movieadda.fun/index32.html",
 
         };
         
