@@ -189,6 +189,7 @@ const items = {
              "Ek Deewane ki Deewaniyat" : "https://www.movieadda.fun/index29.html",
              "Bhagwat Chapter one Raakshas" : "https://www.movieadda.fun/index31.html",
              "Thamma" : "https://www.movieadda.fun/index32.html",
+             "They Call him OG" : "https://www.movieadda.fun/index33.html",
 
         };
         
