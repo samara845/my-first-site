@@ -190,6 +190,8 @@ const items = {
              "Bhagwat Chapter one Raakshas" : "https://www.movieadda.fun/index31.html",
              "Thamma" : "https://www.movieadda.fun/index32.html",
              "They Call him OG" : "https://www.movieadda.fun/index33.html",
+             "Kurukshetra S01" : "https://www.movieadda.fun/Kurukshera%2001.html",
+             "Srikanth" : "https://www.movieadda.fun/Srikanth.html",
 
         };
         
