@@ -193,7 +193,7 @@ const items = {
              "Kurukshetra S01" : "https://www.movieadda.fun/Kurukshera%2001.html",
              "Srikanth" : "https://www.movieadda.fun/Srikanth.html",
              "Bahubali epic" : "https://www.movieadda.fun/BahubaliTheEpic.html",
-             "Idli kadhaai" : "https://drive.google.com/file/d/1OC2J4bTc8Ig1RWH3zV9bz3GE3XC3co7e/view",
+             "Idli kadhaai" : "https://www.movieadda.fun/idly.html",
              "Taj Story" : "https://www.movieadda.fun/Taj%20Story.html",
 
         };
