@@ -195,6 +195,11 @@ const items = {
              "Bahubali epic" : "https://www.movieadda.fun/BahubaliTheEpic.html",
              "Idli kadhaai" : "https://www.movieadda.fun/idly.html",
              "Taj Story" : "https://www.movieadda.fun/Taj%20Story.html",
+             "khalnigranaaya" : "https://www.movieadda.fun/index37.html",
+             "Uff ye siyapaa" : "https://www.movieadda.fun/index38.html",
+             "Rangbaaz the bihar chapter" : "https://www.movieadda.fun/index39.html",
+             "Ek chatur nar" : "https://www.movieadda.fun/index40.html",
+             "Haq" : "https://www.movieadda.fun/index41.html",
 
         };
         
