@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Movie Adda – Admin Panel</title>
+  <link rel="icon" type="image/png" href="movie adda 3.png">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+<!-- LOGIN -->
+<div id="loginView" class="wrap login">
+  <div class="card">
+    <h2>🔐 Admin Login</h2>
+    <label for="pw">Password</label>
+    <input type="password" id="pw" placeholder="Admin password" autocomplete="current-password">
+    <div class="actions"><button class="btn" id="loginBtn">Login</button></div>
+    <div class="msg" id="loginMsg"></div>
+  </div>
+</div>
+
+<!-- APP -->
+<div id="appView" class="hide">
+  <div class="top">
+    <h1>🎬 Movie Adda Admin</h1>
+    <div class="right">
+      <a href="index.html" target="_blank" class="btn ghost sm" style="text-decoration:none">Site dekhein</a>
+      <button class="btn ghost sm" id="logoutBtn">Logout</button>
+    </div>
+  </div>
+
+  <div class="wrap">
+    <div class="msg err hide" id="defaultWarn">⚠️ Abhi default password chal raha hai. "🔑 Password" tab me jaakar apna password badal lo.</div>
+    <div class="tabs" style="margin-top:12px">
+      <button class="tab on" data-tab="add" id="tabAdd">➕ Add Movie</button>
+      <button class="tab" data-tab="list">📋 All Movies (<span id="count">0</span>)</button>
+      <button class="tab" data-tab="pass">🔑 Password</button>
+    </div>
+
+    <!-- ADD / EDIT FORM -->
+    <form class="card" id="movieForm" autocomplete="off">
+      <h2 id="formTitle">Nayi Movie Add Karein</h2>
+
+      <label for="name">Movie / Series Name <span class="req">*</span></label>
+      <input id="name" maxlength="150" required placeholder="Jaise: Dhurandhar 2">
+
+      <div class="row">
+        <div>
+          <label for="category">Category <span class="req">*</span></label>
+          <select id="category">
+            <option>Movies</option>
+            <option>Web Series</option>
+            <option>Hollywood</option>
+          </select>
+        </div>
+        <div>
+          <label for="status">Status</label>
+          <select id="status">
+            <option value="published">Published (site par dikhe)</option>
+            <option value="hidden">Hidden (chhupa rahe)</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row3">
+        <div>
+          <label for="genre">Genre</label>
+          <input id="genre" maxlength="100" placeholder="Action / Drama">
+        </div>
+        <div>
+          <label for="year">Release Year</label>
+          <input id="year" maxlength="4" inputmode="numeric" placeholder="2026">
+        </div>
+        <div>
+          <label for="language">Language</label>
+          <input id="language" maxlength="60" list="langs" placeholder="Hindi">
+          <datalist id="langs">
+            <option>Hindi</option><option>English</option><option>Hindi Dubbed</option>
+            <option>Tamil</option><option>Telugu</option><option>Malayalam</option>
+            <option>Kannada</option><option>Bhojpuri</option><option>Punjabi</option>
+          </datalist>
+        </div>
+      </div>
+
+      <label for="description">Description <span class="req">*</span></label>
+      <textarea id="description" maxlength="3000" required placeholder="Movie ki short story / details likhein..."></textarea>
+
+      <div class="row">
+        <div>
+          <label for="movieUrl">Movie URL (Google Drive link) <span class="req">*</span></label>
+          <input id="movieUrl" type="url" required placeholder="https://drive.google.com/file/d/…/view">
+          <div class="hint">Drive link se player + download button apne-aap ban jayega.</div>
+        </div>
+        <div>
+          <label for="downloadUrl">Download URL (optional)</label>
+          <input id="downloadUrl" type="url" placeholder="Khali chhodo to Drive se auto banega">
+        </div>
+      </div>
+
+      <label>Poster <span class="req">*</span></label>
+      <div class="poster-box">
+        <div class="poster-prev" id="posterPrev">Poster<br>preview</div>
+        <div class="poster-inputs">
+          <input type="file" id="posterFile" accept="image/jpeg,image/png,image/webp">
+          <div class="hint">Image upload karein (apne-aap chhoti ho kar Drive me save hogi)</div>
+          <div class="or">— ya —</div>
+          <input type="url" id="posterUrl" placeholder="Poster image URL paste karein" style="margin-top:6px">
+        </div>
+      </div>
+
+      <div class="actions">
+        <button type="submit" class="btn" id="saveBtn">Movie Publish Karein</button>
+        <button type="button" class="btn ghost hide" id="cancelEdit">Edit Cancel</button>
+      </div>
+      <div class="msg" id="formMsg"></div>
+    </form>
+
+    <!-- CHANGE PASSWORD -->
+    <form class="card hide" id="passCard" autocomplete="off">
+      <h2>🔑 Password Change Karein</h2>
+      <label for="curPw">Purana password</label>
+      <input type="password" id="curPw" autocomplete="current-password" required>
+      <label for="newPw">Naya password (kam se kam 6 character)</label>
+      <input type="password" id="newPw" minlength="6" autocomplete="new-password" required>
+      <label for="newPw2">Naya password dobara</label>
+      <input type="password" id="newPw2" minlength="6" autocomplete="new-password" required>
+      <div class="actions"><button type="submit" class="btn" id="passBtn">Password Badlo</button></div>
+      <div class="msg" id="passMsg"></div>
+    </form>
+
+    <!-- LIST -->
+    <div class="card hide" id="listCard">
+      <h2>Saari Movies</h2>
+      <input id="filter" placeholder="Search..." style="margin-bottom:12px">
+      <div class="list" id="list"></div>
+    </div>
+  </div>
+</div>
+
+<script src="config.js"></script>
+<script src="admin.js"></script>
+</body>
+</html>
