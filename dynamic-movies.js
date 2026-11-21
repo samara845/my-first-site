@@ -77,11 +77,13 @@
   function renderSlider() {
     var box = $('dynSlider'), track = $('dynTrack');
     if (!box || !track) return;
-    var original = document.querySelector('.slider');
+    // DHYAN: purane index.html ke tags band nahi the, isliye baaki page (trending, demand, footer)
+    // `.slider` ke ANDAR hai. Isliye `.slider` ko kabhi hide nahi karte, sirf uska `.slide-track` hide karte hain.
+    var oldTrack = document.querySelector('.slider > .slide-track');
     var fresh = movies.slice(0, 15).map(function (m) { return { href: link(m), src: m.poster, name: m.name }; });
     if (!fresh.length) {                 // koi nayi movie nahi => purana slider hi chalne do
       box.style.display = 'none';
-      if (original) original.style.display = '';
+      if (oldTrack) oldTrack.style.display = '';
       return;
     }
     var list = fresh.concat(collectStatic());
@@ -92,7 +94,7 @@
     half.concat(half).forEach(function (s) { track.appendChild(slideEl(s)); });
     track.style.animationDuration = Math.max(12, Math.round(half.length * itemW / 60)) + 's';  // ~60px/sec
     box.style.display = 'block';
-    if (original) original.style.display = 'none';
+    if (oldTrack) oldTrack.style.display = 'none';
   }
 
   /* home: Latest Added with tabs */
